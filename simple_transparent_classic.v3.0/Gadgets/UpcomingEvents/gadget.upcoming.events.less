@@ -1,0 +1,25 @@
+
+.WaGadgetUpcomingEvents {
+	ul { margin: 0; padding: 0; list-style: none;
+		li { padding: 0; margin: 0px 0 30px 0; position: relative;
+			.title { margin: 0 0 5px 0; padding: 0; }
+			.title a {  }
+			.date { margin: 0; padding: 0px; font-size: 14px; color: #909090; }
+			.date a { color: inherit; }
+			.date a:hover { color: inherit; }
+			&:after { content: ""; position: absolute; bottom: -15px; width: 100%; height: 0px; border-top: 1px dashed #505050; }
+		}
+	}
+	li.last { margin: 0;
+		&:after { display: none; }
+	}
+}
+
+.WaGadgetUpcomingEvents.gadgetStyle001 ul li .date { color: @BoxStyle1-BodyDateColor; }
+.WaGadgetUpcomingEvents.gadgetStyle001 ul li:after { border-top: 1px dashed @BoxStyle1-BodyBorderColor; }
+
+.WaGadgetUpcomingEvents.gadgetStyle002 ul li .date { color: @BoxStyle2-BodyDateColor; }
+.WaGadgetUpcomingEvents.gadgetStyle002 ul li:after { border-top: 1px dashed @BoxStyle2-BodyBorderColor; }
+
+.WaGadgetUpcomingEvents.gadgetStyle003 ul li .date { color: @BoxStyle3-BodyDateColor; }
+.WaGadgetUpcomingEvents.gadgetStyle003 ul li:after { border-top: 1px dashed @BoxStyle3-BodyBorderColor; }

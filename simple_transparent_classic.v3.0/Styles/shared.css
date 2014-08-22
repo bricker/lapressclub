@@ -1,0 +1,1090 @@
+/***********************************************************************************************/
+/*                          payments from profile ticker gadget                                */
+/***********************************************************************************************/
+
+#WA_messagePopup 
+{
+	display: block;
+	width: 222px;
+	font-family: tahoma, sans-serif;
+	font-size: 9pt;
+	position: fixed;
+	z-index: 65535;
+	bottom: 0;
+	right: 0;
+	outline: none;	
+}
+
+#WA_messagePopup ul
+{
+	background: url(<$StaticModel.ThemeUrl$>/images/overlayboxes/messagestop.png) no-repeat top left;
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+
+#WA_messagePopup  .opened ul
+{
+	display: block;
+}
+
+#WA_messagePopup  .closed ul
+{
+	display: none;
+}
+
+#WA_messagePopup ul li
+{
+	background: url(<$StaticModel.ThemeUrl$>/images/overlayboxes/messageseparator.png) no-repeat bottom left;
+	width: 182px;
+	float: left;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+#WA_messagePopup ul li a, #WA_messagePopup ul li a:visited
+{
+	color: #0035cc;
+	outline: none;
+	font-size: 12px !important;
+	font-style: normal;
+	font-weight: normal;
+	background: transparent;	
+}
+
+#WA_messagePopup ul li a:hover
+{
+	color: #2055ed;
+}
+
+#WA_messagePopup ul li:last-child, #WA_messagePopup ul li.last
+{
+	background: url(<$StaticModel.ThemeUrl$>/images/overlayboxes/messagebg.png) repeat-y top left;
+}
+
+
+#WA_messagePopup ul li:first-child, #WA_messagePopup ul li.first
+{
+	margin-top: 6px;
+}
+
+#WA_messagePopup  a#messagePopupButton
+{
+	display: block;
+	width: 222px;
+
+	text-decoration: none;
+	float: left;
+}
+
+#WA_messagePopup  .opened #messagePopupButton
+{
+	background: url(<$StaticModel.ThemeUrl$>/images/overlayboxes/messagesopen.png) no-repeat top left;
+	height: 27px;
+}
+
+#WA_messagePopup  .closed #messagePopupButton
+{
+	background: url(<$StaticModel.ThemeUrl$>/images/overlayboxes/messagesclose.png) no-repeat top left;
+	height: 31px;	
+}
+
+/***********************************************************************************************/
+/*                          switch to admin view/logout overlay box                            */
+/***********************************************************************************************/
+#WA_switchToAdmin
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+	background: url(<$StaticModel.ThemeUrl$>/images/overlayboxes/adminswitch.png) no-repeat bottom left;
+	width: 220px;
+	height: 32px;
+	z-index: 65535;
+}
+
+#WA_switchToAdmin a, #WA_switchToAdmin a:visited, #WA_switchToAdmin span
+{
+	color: black !important;
+	font-size: 12px !important;
+	float: left;
+	margin-top: 7px;
+	font-style: normal;
+	font-weight: normal;
+	background: transparent;
+}
+
+#WA_switchToAdmin a:first-child 
+{
+	margin-left: 14px;
+}
+
+#WA_switchToAdmin span
+{
+	margin-left: 3px;
+	margin-right: 3px;	
+}
+
+#WA_switchToAdmin a:hover
+{
+	color: #555 !important;
+}
+
+/* <Confirm windows> */
+.commonMessageBox input.button
+{
+	padding: 1px 6px;
+	margin-right: 7px;
+    width: 0;
+    overflow: visible;
+}
+
+.commonMessageBox input.button[class]
+{
+	width: auto;
+}
+
+.commonMessageBox
+{
+  position: relative;
+  width: 100%;
+  border: none;
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.commonMessageBox .clearEnd
+{
+	clear: both;
+	height: 1px;
+}
+
+.commonMessageBox DIV
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.commonMessageBox .cww
+{
+  height: 4px;
+  overflow: hidden;
+  font-size: 0.00em;
+}
+
+.commonMessageBox .cww1,
+.commonMessageBox .cww2,
+.commonMessageBox .cww3,
+.commonMessageBox .cww4
+{
+  height: 1px;
+  overflow: hidden;
+}
+
+.commonMessageBox .cww1
+{
+  margin: 0px 4px;
+}
+
+.commonMessageBox .cww2
+{
+  margin: 0px 2px;
+}
+
+.commonMessageBox .cww3,
+.commonMessageBox .cww4
+{
+  margin: 0px 1px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+.commonMessageBox .cww3
+{
+  border-left-width: 3px;
+  border-right-width: 3px;
+}
+
+.commonMessageBox .cww4
+{
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+
+.commonMessageBox .cww-inner
+{
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+}
+
+.commonMessageBox .cww-co
+{
+  padding-left: 50px;
+  height: 36px;
+  *height: auto;
+  *min-height: 16px;
+  *padding-top: 10px;
+  *padding-bottom: 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.commonMessageBox .cww-co>div
+{
+  padding-bottom: 7px;
+}
+
+.commonMessageBox .cww-co div,
+.commonMessageBox .kvTable td
+{
+  color: #000000 !important;
+}
+
+.commonMessageBox .cww-co>div:first-child
+{
+	padding-top: 7px;
+}
+
+
+.commonMessageBox .cww-co .alert
+{
+    color: #FF0000 !important;
+}
+
+.commonMessageBox .cww-co .header
+{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.commonMessageBox .kvTable td.labelInfoColumn
+{
+    width: 96px; 
+    text-align:right; 
+    padding-right:10px;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.commonMessageBox .kvTable td.infoColumn
+{
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+div.confirmWindowInfo .cww-co h1
+{
+    font-size: 1.3em !important;
+}
+
+.commonMessageBox .cww-co A,
+.commonMessageBox .cww-co A:link,
+.commonMessageBox A:active,
+.commonMessageBox .cww-co A:visited,
+.commonMessageBox .cww-co A:hover,
+div.generalFieldsContainer div.fieldBody div.confirmWindowOuterContainer a,
+div.generalFieldsContainer div.fieldBody div.confirmWindowOuterContainer a:link,
+div.generalFieldsContainer div.fieldBody div.confirmWindowOuterContainer a:active,
+div.generalFieldsContainer div.fieldBody div.confirmWindowOuterContainer a:visited
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #008FD1 !important;
+}
+
+.commonMessageBox .cww-co A:hover,
+div.generalFieldsContainer div.fieldBody div.confirmWindowOuterContainer a:hover
+{
+  color: #15B6FF !important;
+}
+
+.commonMessageBox .cww-co H1
+{
+  padding-bottom: 10px;
+  font-size: 1.00em !important;
+}
+
+DIV.confirmWindowWarning .cww-co
+{
+  font-size: 1.00em !important;
+}
+
+.commonMessageBox .cww-co P,
+.commonMessageBox .cww-co
+{
+  font-size: 1.00em !important;
+}
+
+/* <Warning> */
+
+.confirmWindowWarning .cww1,
+.confirmWindowWarning .cww2
+{
+  background-color: #FFC017; 
+}
+
+.confirmWindowWarning .cww3,
+.confirmWindowWarning .cww4,
+.confirmWindowWarning .cww-inner
+{
+  border-left-color: #FFC017;
+  border-right-color: #FFC017;
+  background-color: #FDFFCE;
+}
+
+.confirmWindowWarning .cww-inner
+{
+  background: #FDFFCE url(<$StaticModel.ThemeUrl$>/images/confirmWindows/confirm-warning-icon.gif) 10px 6px no-repeat;
+}
+
+/* </Warning> */
+
+/* <Info> */
+
+.confirmWindowInfo .cww1,
+.confirmWindowInfo .cww2
+{
+  background-color: #2B588C; 
+}
+
+.confirmWindowInfo .cww3,
+.confirmWindowInfo .cww4,
+.confirmWindowInfo .cww-inner
+{
+  border-left-color: #2B588C;
+  border-right-color: #2B588C;
+  background-color: #D8E4F2;
+}
+
+.confirmWindowInfo .cww-inner
+{
+  background: #D8E4F2 url(<$StaticModel.ThemeUrl$>/images/confirmWindows/confirm-info-icon.gif) 10px 6px no-repeat;
+}
+
+/* </Info> */
+
+/* <Success> */
+
+.confirmWindowSuccess .cww1,
+.confirmWindowSuccess .cww2
+{
+  background-color: #1DAC13; 
+}
+
+.confirmWindowSuccess .cww3,
+.confirmWindowSuccess .cww4,
+.confirmWindowSuccess .cww-inner
+{
+  border-left-color: #1DAC13;
+  border-right-color: #1DAC13;
+  background-color: #DFFEDE;
+}
+
+.confirmWindowSuccess .cww-inner
+{
+  background: #DFFEDE url(<$StaticModel.ThemeUrl$>/images/confirmWindows/confirm-succ-icon.gif) 10px 6px no-repeat;
+}
+
+
+/* </Success> */
+
+/* <Error> */
+
+.confirmWindowError .cww1,
+.confirmWindowError .cww2
+{
+  background-color: #FF0000; 
+}
+
+.confirmWindowError .cww3,
+.confirmWindowError .cww4,
+.confirmWindowError .cww-inner
+{
+  border-left-color: #FF0000;
+  border-right-color: #FF0000;
+  background-color: #FFE5E5;
+}
+
+.confirmWindowError .cww-inner
+{
+  background: #FFE5E5 url(<$StaticModel.ThemeUrl$>/images/confirmWindows/confirm-error-icon.gif) 10px 6px no-repeat;
+}
+
+/* </Error> */
+
+/* </Confirm windows> */
+
+/* <Warning Icon> */
+.BulletedContainerWarninngSigned
+{
+  padding-left: 20px;
+  background: url(<$StaticModel.ThemeUrl$>/images/confirmWindows/icon-warning.png) left 0px no-repeat;
+  min-height: 16px;
+}
+
+.BulletedContainerWarninngSignedDisabled
+{
+  padding-left: 20px;
+  background: url(<$StaticModel.ThemeUrl$>/images/confirmWindows/icon-warning-disabled.gif) left 0px no-repeat;
+  min-height: 16px;
+}
+/* </Warning Icon> */
+
+/* Round corner box */
+
+.RoundedCornerBox
+{
+  width: auto;
+}
+
+.RoundedCornerBox .cww1,
+.RoundedCornerBox .cww2
+{
+  background-color: #FFC017; 
+}
+
+.RoundedCornerBox .cww3,
+.RoundedCornerBox .cww4,
+.RoundedCornerBox .cww-inner
+{
+  border-left-color: #FFC017;
+  border-right-color: #FFC017;
+  background-color: #FDFFCE;
+}
+
+.RoundedCornerBox .cww-co
+{
+  padding: 8px;
+}
+
+
+/**
+ * <WA Dialog common styles>
+ */
+
+DIV.dialogMainContainer,
+DIV.dialogMainContainer TABLE TD
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    border: none;
+}
+
+DIV.dialogMainContainer TABLE
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+DIV.dialogMainContainer TABLE TD
+{
+    vertical-align: top;
+}
+
+DIV.dialogMainContainer
+{
+    position: fixed;
+    left: -37000px;
+    top: -37000px;
+    visibility: visible;
+}
+
+
+/* <uilibrary override> */
+DIV.dialogMainContainer DIV.dialogContentContainer .SplittedContainer DIV.columnTypeLabel { width: 100px; }
+DIV.dialogMainContainer DIV.dialogContentContainer .SplittedContainer DIV.columnTypeField { width: 355px; }
+
+DIV.dialogMainContainer DIV.dialogContentContainer INPUT.typeTextBox { width: 350px; }
+DIV.dialogMainContainer DIV.dialogContentContainer TEXTAREA.typeTextArea { width: 350px; }
+DIV.dialogMainContainer DIV.dialogContentContainer #idTabsContent
+{
+    width: 461px;
+    padding: 0 10px 0 10px;
+}
+/* </uilibrary override> */
+
+
+/* Styles for old dialogs. .bonaDialogWrapper */
+.dialogMainContainer.bonaDialogWrapper .dialogBodyContainer
+{
+    -moz-border-radius: 0 0 7px 7px;
+    -webkit-border-radius: 0 0 7px 7px;
+    border-radius: 0 0 7px 7px;
+}
+
+.dialogMainContainer.bonaDialogWrapper .dialogContentContainer
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxContainer
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    background-color: transparent;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBox
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    opacity: 1;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxShadow
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxLeft1,DIV.dialogRoundedBoxLeft2,DIV.dialogRoundedBoxRight2,DIV.dialogRoundedBoxRight1,DIV.dialogRoundedBoxTop1,DIV.dialogRoundedBoxTop2,DIV.dialogRoundedBoxBottom2,DIV.dialogRoundedBoxBottom1
+{
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxLeft1
+{
+    left: 0px;
+    top: 4px;
+    width: 1px;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxLeft2
+{
+    left: 1px;
+    top: 2px;
+    width: 3px;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxRight2
+{
+    right: 1px;
+    top: 2px;
+    width: 3px;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxRight1
+{
+    right: 0px;
+    top: 4px;
+    width: 1px;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxTop1
+{
+    left: 4px;
+    top: 0px;
+    height: 1px;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxTop2
+{
+    left: 2px;
+    top: 1px;
+    height: 3px;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxBottom2
+{
+    left: 2px;
+    bottom: 1px;
+    height: 3px;
+}
+
+DIV.dialogMainContainer DIV.dialogRoundedBoxBottom1
+{
+    left: 4px;
+    bottom: 0px;
+    height: 1px;
+}
+
+DIV.dialogMainContainer DIV.dialogControlsContainer
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 6;
+}
+
+DIV.dialogMainContainer DIV.dialogBorderEdge,DIV.dialogBorderCorner
+{
+    position: absolute;
+    z-index: 5;
+}
+
+DIV.dialogMainContainer DIV.dialogBorderLeft,DIV.dialogBorderRight
+{
+    top: 3px;
+    width: 3px;
+    cursor: e-resize;
+}
+
+DIV.dialogMainContainer DIV.dialogBorderLeft { left: 0px; }
+DIV.dialogMainContainer DIV.dialogBorderRight { right: 0px; }
+DIV.dialogMainContainer DIV.dialogBorderTop { top: 0px; }
+DIV.dialogMainContainer DIV.dialogBorderBottom { bottom: 0px; }
+
+DIV.dialogMainContainer DIV.dialogBorderTop,DIV.dialogBorderBottom
+{
+    left: 3px;
+    height: 3px;
+    cursor: n-resize;
+}
+
+DIV.dialogMainContainer DIV.dialogBorderCorner
+{
+    width: 5px;
+    height: 5px;
+}
+
+DIV.dialogMainContainer DIV.dialogBorderTopLeft
+{
+    left: 0px;
+    top: 0px;
+    cursor: nw-resize;
+}
+
+DIV.dialogMainContainer DIV.dialogBorderTopRight
+{
+    right: 0px;
+    top: 0px;
+    cursor: ne-resize;
+}
+
+DIV.dialogMainContainer DIV.dialogBorderBottomLeft
+{
+    left: 0px;
+    bottom: 0px;
+    cursor: ne-resize;
+}
+
+DIV.dialogMainContainer DIV.dialogBorderBottomRight
+{
+    right: 0px;
+    bottom: 0px;
+    cursor: nw-resize;
+}
+
+DIV.dialogMainContainer DIV.dialogContainer
+{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    z-index: 7;
+    background-color: #FFFFFF;
+
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -moz-box-shadow: 0 7px 15px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 7px 15px rgba(0,0,0,.3);
+    box-shadow: 0 7px 15px rgba(0,0,0,.3);
+}
+
+DIV.dialogMainContainer DIV.dialogOuterHeadContainer
+{
+    position: relative;
+    height: 48px;
+    z-index: 7;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+DIV.dialogMainContainer DIV.dialogOuterHeadContainerShadow
+{
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 45px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+DIV.dialogMainContainer DIV.dialogInnerHeadContainer,DIV.dialogTitleContainer,DIV.dialogTabContainer { height: 48px; }
+
+DIV.dialogMainContainer DIV.dialogInnerHeadContainer
+{
+    background-color: #EFEFEF;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    cursor: move;
+}
+
+DIV.dialogMainContainer DIV.dialogInnerHeadContainer DIV.dialogInnerHeadContent { height: 100%; }
+
+DIV.dialogMainContainer DIV.dialogTitleContainer
+{
+    position: relative;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    cursor: move;
+}
+
+DIV.dialogMainContainer DIV.dialogTitleText,DIV.dialogTitleTextShadow
+{
+    position: absolute;
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    cursor: move;
+}
+
+DIV.dialogMainContainer DIV.dialogTitleText
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 7;
+    overflow: hidden;
+
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    color: #303030;
+    text-shadow: 0 1px 1px #fff;
+}
+
+DIV.dialogMainContainer DIV.dialogTitleTextShadow
+{
+    left: 18px;
+    top: 10px;
+    z-index: 3;
+    visibility: hidden;
+    color: #FFFFFF;
+}
+
+DIV.dialogMainContainer DIV.dialogTitleInfo
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 7;
+    overflow: hidden;
+    margin: 17px 15px 0 15px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #C0C0C0;
+    text-shadow: 0 1px 1px #fff;
+}
+
+DIV.dialogMainContainer div.dialogControlClose
+{
+    width: 15px;
+    height: 15px;
+    z-index: 5;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMAUExURQAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGd27GMAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAChJREFUGFdjYKAGYAQaAsJQwMjIyADCyALIXKBiDC6acjT9qOZT4GQADogAHnFgHAMAAAAASUVORK5CYII=');
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+DIV.dialogMainContainer DIV.dialogContentContainer
+{
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 0;
+}
+
+DIV.dialogMainContainer DIV.dialogScrollableContentContainer { border: none; }
+DIV.dialogMainContainer DIV.dialogContentContainer { padding: 20px 30px 20px 30px; }
+DIV.dialogMainContainer DIV.dialogInnerContainer { position: relative; }
+DIV.dialogMainContainer DIV.dialogBodyContainer { overflow: hidden; }
+
+DIV.dialogMainContainer DIV.dialogOuterFooterContainer
+{
+    background-color: #EFEFEF;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+DIV.dialogMainContainer DIV.dialogMessageContainer
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 37779;
+    visibility: hidden;
+}
+
+DIV.dialogMainContainer DIV.dialogMessage
+{
+    position: absolute;
+    visibility: hidden;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+DIV.dialogMainContainer DIV.dialogWaitMessage
+{
+    padding-top: 37px;
+    background-color: transparent;
+    background-image: url("data:image/gif;base64,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");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+DIV.dialogMainContainer DIV.dialogErrorMessage
+{
+    color: #FF0000;
+}
+
+DIV.dialogMainContainer DIV.dialogFooterInfoMessageContainer { display: table; }
+DIV.dialogMainContainer DIV.dialogFooterInfoMessageContainerDIV.dialogInfoMessageLabel
+{
+    padding: 15px 0px 0px 30px;
+    display: table-cell;
+    font-weight: bold;
+}
+DIV.dialogMainContainer DIV.dialogFooterInfoMessageContainerDIV.dialogInfoMessageText
+{
+    padding: 15px 30px 0px 7px;
+    display: table-cell;
+}
+
+
+DIV.dialogMainContainer DIV.SplittedContainer.dialogInfoMessageContainer { display: inline-block; }
+DIV.dialogMainContainer DIV.dialogFooterContainer { height: 100%; }
+DIV.dialogMainContainer DIV.dialogTabContainer { display: inline; }
+
+DIV.dialogMainContainer DIV.dialogOuterFooterContainer DIV.actionButtons
+{
+    text-align: center;
+    margin: 15px 0;
+}
+
+DIV.dialogMainContainer DIV.dialogOuterFooterContainer DIV.actionButtons .waButtonContainer
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+DIV.dialogMainContainer DIV.dialogOuterFooterContainer DIV.actionButtons INPUT
+{
+    height: 25px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    width: auto;
+}
+
+/* fix dialogTitleText hack TODO: remeve it after fix dialog*/
+DIV.dialogMainContainer DIV.dialogInnerHeadContainer + DIV.dialogTitleText { margin: 0; }
+
+/**
+ * </WA Dialog common styles>
+ */
+
+/* Scrollable panel styles */
+DIV.scrollablePanelContainer { position: relative; }
+
+DIV.scrollablePanelContainer DIV.scrollablePanelWrapper { overflow: hidden; }
+DIV.scrollablePanelContainer DIV.scrollablePanelWrapper ::-webkit-scrollbar { width: 0; }
+DIV.scrollablePanelContainer DIV.scrollablePanelWrapper ::-webkit-scrollbar-button { width: 0; }
+DIV.scrollablePanelContainer DIV.scrollablePanelWrapper ::-webkit-scrollbar-track { width: 0; }
+DIV.scrollablePanelContainer DIV.scrollablePanelWrapper ::-webkit-scrollbar-track-piece { width: 0; }
+DIV.scrollablePanelContainer DIV.scrollablePanelWrapper ::-webkit-scrollbar-thumb { width: 0; }
+DIV.scrollablePanelContainer DIV.scrollablePanelWrapper ::-webkit-scrollbar-corner { width: 0; }
+DIV.scrollablePanelContainer DIV.scrollablePanelWrapper ::-webkit-resizer { width: 0; }
+
+DIV.scrollablePanelContainer DIV.scrollBarContainer,DIV.scrollBarSlider
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABCAMAAAC1xj0zAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFFQTFRFysrK39/fxMTEtbW12tra9vb26+vroqKi5ubmlpaW0NDQwcHB4ODg29vb1NTU4+Pj/f397u7ut7e38fHx4eHh3d3d8vLy+vr65+fnz8/P7e3tunUk0AAAADhJREFUeNpi4OZiYQQDFnZmJgYwYEKwhFgFxFnFBNlYJTk5hKUkeFj4OJg52Vh4RRlF+NmYAQIMACUMAa+nFZs1AAAAAElFTkSuQmCC);
+    background-repeat: repeat-y;
+}
+
+DIV.scrollablePanelContainer DIV.scrollBarContainer
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    width: 10px;
+    overflow: hidden;
+    background-color: #DFDFDF;
+    cursor: default;
+}
+
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarTop,DIV.scrollBarBottom,DIV.scrollBarSliderTop,DIV.scrollBarSliderMiddle,DIV.scrollBarSliderBottom
+{
+    position: absolute;
+    left: 0;
+    width: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAATCAMAAACwcE1OAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQhQTFRF////ysrK39/fxMTEtbW12tra9vb26+vroqKi5ubmlpaW0NDQwcHB4ODg29vb1NTU4+Pj/f397u7ut7e38fHx4eHh3d3d8vLy+vr65+fnz8/P7e3txcXFzMzMp6enwMDAw8PDxsbGpaWlj4+Pvb295eXlurq6oaGh+/v7uLi40tLStLS0u7u7vr6+0dHRnZ2doKCgmJiY1tbWl5eXjIyMjY2Nzc3N2NjYi4uLwsLCubm5lJSUkJCQ8PDwv7+/3Nzc+fn59/f37Ozs1dXVm5ubqKio7+/vpqamlZWVtra2o6Oj4uLinp6empqazs7On5+fsbGxvLy819fXqqqq2dnZrKysyMjI////b2CjvQAAAFh0Uk5T////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AHibwggAAAEqSURBVHjaxJDrVoJAFEaPw2UckYsomqnhDRQwFLuYllJappWW3Xj/NwkGjdUTtP/MXmev+fPBLsvsue80TyjNxCArcIjCpVkmRWESA92e8yGV0XYwGWqEaO9jZ2ByBsaGVHdgV+ge8SV1WbI3ojovixKnrTcGKhbRMyFrmPC5KGNe8EihUhY5meQ9zElFpCk4D9ZvXh2yszpkB4IgiHJAiXJsUQ6fKF+mGvX4eHbduort/KJ1s8+57u1dfISQP/avv60lXU2dChkUryayGQX54WqGwcLkexptPnVd72OLCEFu3vK+bAVjRbYsaGdnpyH14+HLU3rQ778+srPEQK+5C1leDKXPzpvZ7vXaenWcGFRtX6T4D2ajRmkkBowwkiijJqtXKXpiPwIMAEGFW/e/LsLPAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    cursor: default;
+}
+
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarTop,DIV.scrollBarBottom
+{
+    height: 2px;
+    z-index: 4;
+}
+
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarTop { top: 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarBottom { bottom: 0; }
+
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarSlider
+{
+    position: absolute;
+    left: 0;
+    top: 1px;
+    z-index: 5;
+    width: 10px;
+    overflow: hidden;
+    background-color: #F7F7F7;
+    cursor: default;
+}
+
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarSliderTop,DIV.scrollBarSliderMiddle,DIV.scrollBarSliderBottom { z-index: 7; }
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarSliderTop,DIV.scrollBarSliderBottom { height: 4px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarSliderTop { top: 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarSliderMiddle { height: 7px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainer DIV.scrollBarSliderBottom { bottom: 0; }
+
+DIV.scrollablePanelContainer DIV.scrollBarContainerNormal { background-position: 0 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerNormal DIV.scrollBarTop { background-position: 0 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerNormal DIV.scrollBarBottom { background-position: 0 -17px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerNormal DIV.scrollBarSlider { background-position: -30px 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerNormal DIV.scrollBarSliderTop { background-position: 0 -2px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerNormal DIV.scrollBarSliderMiddle { background-position: 0 -6px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerNormal DIV.scrollBarSliderBottom { background-position: 0 -13px; }
+
+DIV.scrollablePanelContainer DIV.scrollBarContainerOver { background-position: -10px 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerOver DIV.scrollBarTop { background-position: -10px 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerOver DIV.scrollBarBottom { background-position: -10px -17px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerOver DIV.scrollBarSlider { background-position: -40px 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerOver DIV.scrollBarSliderTop { background-position: -10px -2px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerOver DIV.scrollBarSliderMiddle { background-position: -10px -6px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerOver DIV.scrollBarSliderBottom { background-position: -10px -13px; }
+
+DIV.scrollablePanelContainer DIV.scrollBarContainerActive { background-position: -20px 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerActive DIV.scrollBarTop { background-position: -20px 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerActive DIV.scrollBarBottom { background-position: -20px 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerActive DIV.scrollBarSlider { background-position: -50px 0; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerActive DIV.scrollBarSliderTop { background-position: -20px -2px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerActive DIV.scrollBarSliderMiddle { background-position: -20px -6px; }
+DIV.scrollablePanelContainer DIV.scrollBarContainerActive DIV.scrollBarSliderBottom { background-position: -20px -13px; }
+
+DIV.scrollablePanelContainer DIV.scrollablePanelContentContainer
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    visibility: hidden;
+}
+
+DIV.scrollablePanelContainerBorder
+{
+    border: 1px solid #C4C4C4;
+    border-right-color: #DBDBDB;
+    border-bottom-color: #DBDBDB;
+    border-radius: 2px;
+}
+
+/* Container mask styles */
+.waContainerMask
+{
+    display: none;
+    pointer-events: all;
+    background: #ffffff;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+.waContainerMask.dialogShading
+{
+    position: fixed;
+    background-color: #000000;
+
+    -webkit-transition: opacity 700ms;
+    -moz-transition: opacity 700ms;
+    -ms-transition: opacity 700ms;
+    -o-transition: opacity 700ms;
+    transition: opacity 700ms;
+}
+
+.waContainerMask.dialogShadingActive
+{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+    -moz-opacity: .4;
+    -khtml-opacity: .4;
+    opacity: .4;
+}
+
+/* Correction for Peter Blum's controls */
+.fieldBody,
+.generalFormContainer .inner:first-child
+{
+  position: relative;
+}
+
+.fieldBody > span[id*="Date"] input:first-child,
+.fieldBody > span[id*="Time"] input:first-child,
+.generalFormContainer .inner:first-child > span[id*="dateTextBox"] input:first-child,
+.generalFormContainer .inner:first-child > span[id*="timeTextBox"] input:first-child
+{
+    margin: 0;
+    vertical-align: bottom;
+}
+
+.DES_TPPopup
+{
+    vertical-align: middle;
+}

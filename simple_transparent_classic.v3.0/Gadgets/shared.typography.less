@@ -1,0 +1,99 @@
+
+html { font-size: 100.01%; }
+body { font: @TypographyBodyFont; color: @TypographyBodyColor; }
+
+// Headers
+h1, h2, h3, h4, h5, h6 { padding: 0; font-family: Tahoma; line-height: normal; }
+h1 { margin: 0.4em 0 0.4em 0; font-weight: bold; font-size: 50px; color: @TypographyHeader1Color; }
+h2 { margin: 0.5em 0 0.5em 0; font-weight: bold; font-size: 36px; color: @TypographyHeader2Color; }
+h3 { margin: 0.6em 0 0.6em 0; font-weight: bold; font-size: 30px; color: @TypographyHeader3Color; }
+h4 { margin: 0.75em 0 0.75em 0; font-weight: bold; font-size: 24px; color: @TypographyHeader4Color; }
+h5 { margin: 0.9em 0 0.9em 0; font-weight: bold; font-size: 20px; color: @TypographyHeader5Color; }
+h6 { margin: 0.9em 0 0.9em 0; font-weight: normal; font-size: 20px; color: @TypographyHeader6Color; }
+.contStylePageTitle { margin: 0.5em 0 0.5em 0; font: @TypographyPageTitleFont; color: @TypographyPageTitleColor; }
+
+// Links
+a { color: @TypographyLinkColor; text-decoration: @TypographyLinkDecoration; }
+a:visited { color: @TypographyLinkColorVisited; }
+a:hover { color: @TypographyLinkColorHover; text-decoration: @TypographyLinkDecorationHover; }
+
+// Indent block
+blockquote {  }
+
+// Quotes everywhere
+.quotedText { background: none; border: none; border-left: 3px solid #959595; margin: 1em 0 1em 9px; padding: 0 0 0 15px; font-style: normal; }
+
+// Additional style text
+.contStyleExcInlineColored1 { color: inherit; }
+.contStyleExcInlineColored2 { color: inherit; }
+.contStyleExcInlineHighlighted { color: #ffffff; background-color: @TypographyTextHighlightedBg; }
+
+// dividers
+.WaContentDivider { display: block; width: 100%; margin: 1em 0; }
+.WaContentDivider[class*=dividerStyle] { height: 1px; }
+
+.WaContentDivider.divider_style_border_solid { height: 0px; border-top: 1px solid #000000; }
+.WaContentDivider.divider_style_border_dotted { height: 0px; border-top: 1px dotted #000000; }
+.WaContentDivider.divider_style_border_dashed { height: 0px; border-top: 1px dashed #000000; }
+.WaContentDivider.divider_style_border_double_solid { height: 1px; border-top: 1px solid #000000; border-bottom: 1px solid #000000; }
+.WaContentDivider.divider_style_border_double_solid_2_to_1 { height: 1px; border-top: 2px solid #000000; border-bottom: 1px solid #000000;}
+
+.WaContentDivider.dividerStyle001 { margin: 1em 0; height: 4px; background: @DividerStyle001-Bg; }
+.WaContentDivider.dividerStyle002 { margin: 1em 0; height: 1px; background: @DividerStyle002-Bg; }
+
+
+// Typography
+.typography() { line-height: 1.375;
+	&:after { content: ""; clear: both; display: block; height: 0; font-size: 0; overflow: hidden; visibility: hidden; }
+
+// additional styles for line height
+	.contStyleWideLineHeight { line-height: 1.7; }
+	.contStyleNarrowLineHeight { line-height: 1.2; }
+
+// reset margin-top at first element
+	h1, h2, h3, h4, h5, h6, p, ul, ol, form, blockquote, dl, pre {
+		&:first-child { margin-top: 0; }
+	}
+
+// reset margin-bottom at last element
+	h1, h2, h3, h4, h5, h6, p, ul, ol, form, blockquote, dl, pre {
+		&:last-child { margin-bottom: 0; }
+	}
+
+// Lists
+	ul { margin: 1em 0 1em 18px; padding: 0; list-style: disc;
+		li { padding: 0; margin: 0.25em 0 0.25em 0; }
+	}
+	ol { margin: 1em 0 1em 24px; padding: 0;
+		li { padding: 0; margin: 0.25em 0 0.25em 0 }
+	}
+
+	ul, ol {
+		ul:first-child,
+		ul:last-child,
+		ol:first-child,
+		ol:last-child { margin-top: 1em; margin-bottom: 1em; }
+	}
+
+// strong
+	b {  }
+
+// italic
+	i {  }
+
+// Responsive img
+	img { max-width: 100%; height: auto; }
+
+// Table
+	.contStyleExcSimpleTable { border-color: #999999;
+		th,
+		td { padding: 5px 7px; border-color: #999999; }
+	}
+
+}
+
+.gadgetContentEditableArea { position: relative; }
+
+[class*="EditableArea"] {
+	.typography;
+}

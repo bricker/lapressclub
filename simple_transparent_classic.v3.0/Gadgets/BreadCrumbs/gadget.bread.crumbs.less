@@ -1,0 +1,10 @@
+.WaGadgetBreadcrumbs { padding: 0; margin: 0;
+	ul { list-style: none; padding: 0; margin: 0;
+		li { padding: 0; margin: 3px 0 3px 0; display: inline-block; vertical-align: top; *display: inline;
+			& + li:before { content: ">"; display: inline-block; padding: 0 11px 0 7px; color: @BreadCrumbsArrowColor; }
+			a { color: @BreadCrumbsLinkColor; text-decoration: underline; }
+			a:hover { text-decoration: none; }
+		}
+		li.last { color: @BreadCrumbsTextColor; }
+	}
+}

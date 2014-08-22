@@ -1,0 +1,96 @@
+.horizontalMenuFirstLevel() { display: table-cell; padding: 0; margin: 0; position: relative; vertical-align: top;
+	& > .item { position: relative; }
+	& > .item > a { display: block; height: 22px; text-decoration: none; vertical-align: top; white-space: nowrap; position: relative; padding: 20px 13px 20px 13px; font: @HorizontalMenu-FirstLevel-Base-Font; color: @HorizontalMenu-FirstLevel-Base-Color; text-align: center; }
+	& > .item > a > span { display: block; height: 22px; padding: 0 0 8px 0; position: relative; }
+    & > .item:hover > a { background: @HorizontalMenu-FirstLevel-Hover-Bg; color: @HorizontalMenu-FirstLevel-Hover-Color; }
+	& > .item:hover > a > span { padding: 0 0 4px 0; border-bottom: @HorizontalMenu-FirstLevel-Hover-LineWidth solid @HorizontalMenu-FirstLevel-Hover-LineColor; }
+	// phantom element
+	&.phantom > .item > a { font: 40px/16px Verdana; text-align: center; }
+	&.phantom > .item > a > span { border-bottom: none; }
+	// selected element
+	&.sel > .item > a { color: @HorizontalMenu-FirstLevel-Selected-Color; background: @HorizontalMenu-FirstLevel-Selected-Bg; }
+	&.sel > .item > a > span { padding: 0 0 8px 0; border-bottom: none; }
+	// mark if has sublevel
+	&.dir > .item > a:after { content: ""; position: absolute; right: 4px; top: 50%; margin: -2px 0 0 0; display: block; width: 4px; height: 4px; .border-radius( 50% ); z-index: 3; background: @HorizontalMenu-FirstLevel-Base-DotColor; }
+}
+
+.horizontalMenuSubLevel() { margin: 0;
+	& > .item { position: relative; }
+	& > .item > a { display: block; width: auto; height: auto; margin: 0 6px; text-align: left; text-decoration: none; padding: 10px 20px 10px 16px; font: @HorizontalMenu-SubLevel-Base-Font; color: @HorizontalMenu-SubLevel-Base-Color; white-space: nowrap; position: relative; }
+	& > .item:hover > a { color: @HorizontalMenu-SubLevel-Hover-Color; background: @HorizontalMenu-SubLevel-Hover-Bg; }
+	// selected
+	&.sel > .item > a { color: @HorizontalMenu-SubLevel-Selected-Color; }
+	&.sel > .item:hover > a { color: @HorizontalMenu-SubLevel-Selected-ColorHover; }
+	// mark if has sublevel
+	&.dir > .item > a:after { content: ""; position: absolute; right: 7px; top: 50%; margin: -2px 0 0 0; display: block; width: 4px; height: 4px; .border-radius( 50% ); z-index: 3; background: @HorizontalMenu-FirstLevel-Base-DotColor; }
+}
+
+.WaGadgetMenuHorizontal { overflow: visible;
+	.menuInner { position: relative; margin: 0 0px;
+		// level 1
+		ul.firstLevel { display: table; margin: 0px; padding: 0px; list-style: none; zoom: 1; text-align: left; background: @HorizontalMenu-FirstLevel-Base-Bg; }
+		ul.firstLevel.adapted { width: 100%; }
+		ul.firstLevel > li { .horizontalMenuFirstLevel(); }
+		// level 2
+		ul ul { display: none; position: absolute; left: 0px; top: 100%; margin: 1px 0 0 0; padding: 6px 0px; list-style: none; min-width: 200px; z-index: 40000; background: @HorizontalMenu-SubLevel-Base-Bg; .box-shadow( 0px 0px 5px 0 rgba(0,0,0,0.3) ); }
+		ul ul:before { content: ""; position: absolute; display: block; width: 100%; height: 3px; top: -2px; left: 0; }
+		ul ul li { .horizontalMenuSubLevel(); }
+		// level 3
+		ul ul ul { position: absolute; left: 100%; top: 0px; margin: -6px 0 0 1px; }
+		ul ul ul:before { content: ""; position: absolute; display: block; width: 3px; height: 100%; top: 0px; left: -2px; }
+		ul ul ul:after { content: ""; position: absolute; display: block; width: 3px; height: 100%; top: 0px; right: -2px; }
+		// hover
+		li > .item:hover > ul { display: block; }
+		.firstLevel > li:last-child ul { left: auto; right: 0; }
+		.firstLevel > li.last-child ul { left: auto; right: 0; }
+		.firstLevel > li:last-child ul ul,
+		.firstLevel > li.last-child ul ul { top: 0px; left: auto; right: 100%; margin: -6px 1px 0 0;  }
+		.ie8 & .firstLevel > li.last-child ul ul { left: auto; right: 100%; }
+	}
+}
+
+
+
+
+.WaGadgetMenuHorizontal.menuStyle002 {
+	.menuInner {
+		// level 1
+		ul.firstLevel { background: none; }
+		ul.firstLevel > li {
+			& > .item {  }
+			& > .item > a { font: normal 18px/22px Arial, Helvetica, sans-serif; color: #fff; }
+			& > .item > a > span {  }
+			& > .item:hover > a { background: none; }
+			& > .item:hover > a > span { border-bottom: 5px solid #fff; }
+			// phantom element
+			&.phantom > .item > a { font: 40px/16px Verdana; text-align: center; }
+			&.phantom > .item > a > span { border-bottom: none; }
+			// selected element
+			&.sel > .item > a { color: #8dd8ff; background: none; }
+			&.sel > .item > a > span {  }
+			// mark if has sublevel
+			&.dir > .item > a:after { background: #fff; }
+		}
+
+		// level 2
+		ul ul { background: #323232; background: rgba(0,0,0,0.8); }
+		ul ul:before {  }
+		ul ul li {
+			& > .item {  }
+			& > .item > a { font: normal 18px/22px Arial, Helvetica, sans-serif; color: #fff; }
+			& > .item:hover > a { color: #fff; background: #4e95ba; }
+			// selected
+			&.sel > .item > a { color: #8dd8ff; }
+			&.sel > .item:hover > a { color: #8dd8ff; }
+			// mark if has sublevel
+			&.dir > .item > a:after { background: #fff; }
+		}
+
+	}
+}
+
+
+
+
+
+

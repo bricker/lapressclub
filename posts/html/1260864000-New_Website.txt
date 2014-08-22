@@ -1,0 +1,11 @@
+URL: http://lapressclub.org/updates/new-website/
+DATE: December 15, 2009
+TAGS: 
+CATEGORY: Updates
+
+New Website
+-----------------------------------------------
+
+<div>
+<p><img src="http://lapressclub.org/wp-content/uploads/2009/12/PressClubSlant.jpg" alt="" width="225" height="125"> The Los Angeles Press Club is excited to unveil its brand new website! Take some time to learn about the <a href="http://lapressclub.info/wordpress/about/history/">Press Clubs history</a> or take a look at some of the Press Clubs annual<a href="http://lapressclub.info/wordpress/awards/">awards</a>. You can also join the press club or<a href="http://lapressclub.info/wordpress/help-out"> help out</a>. Welcome!</p>
+</div>

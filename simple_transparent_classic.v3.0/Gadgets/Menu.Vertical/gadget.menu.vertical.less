@@ -1,0 +1,78 @@
+.verticalMenuFirstLevel() { display: block; padding: 0; margin: 0; position: relative;
+	& > .item { position: relative; }
+	& > .item > a { display: block; text-decoration: none; text-align: left; padding: 4px 20px 4px 20px; position: relative; font: @VerticalMenu-FirstLevel-Base-Font; color: @VerticalMenu-FirstLevel-Base-Color; overflow: hidden; }
+	& > .item > a > span { display: block; padding: 6px 18px 6px 12px; }
+	&:hover > .item > a { background: @VerticalMenu-FirstLevel-Hover-Bg; color: @VerticalMenu-FirstLevel-Hover-Color; }
+	&:hover > .item > a > span { padding: 4px 16px 4px 10px; border: @VerticalMenu-FirstLevel-Hover-LineWidth solid @VerticalMenu-FirstLevel-Hover-LineColor; }
+	// selected
+	&.sel > .item > a { color: @VerticalMenu-FirstLevel-Selected-Color; background: @VerticalMenu-FirstLevel-Selected-Bg; }
+	&.sel > .item > a > span {  }
+	// mark if has sublevel
+	&.dir > .item > a:after { content: ""; position: absolute; top: 50%; right: 28px; margin: -2px 0 0 0px; display: inline-block; vertical-align: middle; width: 4px; height: 4px; .border-radius( 50% ); z-index: 3; background: @VerticalMenu-FirstLevel-Base-DotColor; }
+}
+
+.verticalMenuSubLevel() { margin: 0px 0 0 0; height: auto; display: block;
+	& > .item { position: relative; }
+	& > .item > a { display: block; width: auto; height: auto; text-align: left; margin: 0 6px; padding: 10px 20px 8px 20px; font: @VerticalMenu-SubLevel-Base-Font; color: @VerticalMenu-SubLevel-Base-Color; text-decoration: none; white-space: nowrap; position: relative; }
+	&:hover > .item > a { color: @VerticalMenu-SubLevel-Hover-Color; background: @VerticalMenu-SubLevel-Hover-Bg; }
+	// selected
+	&.sel > .item > a { color: @VerticalMenu-SubLevel-Selected-Color; }
+	&.sel:hover > .item > a { color: @VerticalMenu-SubLevel-Selected-ColorHover; }
+	// mark if has sublevel
+	&.dir > .item > a:after { content: ""; position: absolute; right: 7px; top: 50%; margin: -3px 0 0 0; display: block; width: 4px; height: 4px; .border-radius( 50% ); z-index: 3; background: @VerticalMenu-FirstLevel-Base-DotColor; }
+}
+
+.WaGadgetMenuVertical { overflow: visible;
+	.menuInner { position: relative;
+		// level 1
+		ul.firstLevel { margin: 0; padding: 16px 0; list-style: none; background: @VerticalMenu-FirstLevel-Base-Bg; }
+		ul.firstLevel > li { .verticalMenuFirstLevel(); }
+		// level 2
+		ul ul { display: none; position: absolute; left: 100%; top: 0; min-width: 200px; margin: -5px 0 0 1px; padding: 6px 0; list-style: none; z-index: 40000; background: @VerticalMenu-SubLevel-Base-Bg; .box-shadow( 0px 0px 5px 0 rgba(0,0,0,0.3) ); }
+		ul ul:before { content: ""; position: absolute; display: block; width: 3px; height: 100%; top: 0px; left: -2px; }
+		ul ul li { .verticalMenuSubLevel(); }
+		// level 3
+		ul ul ul { position: absolute; left: 100%; top: 0px; margin-left: 1px; margin-top: -6px; }
+		// hover
+		li:hover > .item > ul { display: block; }
+	}
+}
+
+
+
+.WaGadgetMenuVertical.menuStyle002 {
+	.menuInner {
+		// level 1
+		ul.firstLevel { background: none; }
+		ul.firstLevel > li {
+			& > .item {  }
+			& > .item > a { font: normal 18px/22px Arial, Helvetica, sans-serif; color: #fff; }
+			& > .item > a > span {  }
+			& > .item:hover > a { background: none; }
+			& > .item:hover > a > span { border: 2px solid #fff; }
+			// phantom element
+			&.phantom > .item > a { font: 40px/16px Verdana; text-align: center; }
+			&.phantom > .item > a > span { border-bottom: none; }
+			// selected element
+			&.sel > .item > a { color: #8dd8ff; background: none; }
+			&.sel > .item > a > span {  }
+			// mark if has sublevel
+			&.dir > .item > a:after { background: #fff; }
+		}
+
+		// level 2
+		ul ul { background: #323232; background: rgba(0,0,0,0.8); }
+		ul ul:before {  }
+		ul ul li {
+			& > .item {  }
+			& > .item > a { font: normal 18px/22px Arial, Helvetica, sans-serif; color: #fff; }
+			& > .item:hover > a { color: #fff; background: #4e95ba; }
+			// selected
+			&.sel > .item > a { color: #8dd8ff; }
+			&.sel > .item:hover > a { color: #8dd8ff; }
+			// mark if has sublevel
+			&.dir > .item > a:after { background: #fff; }
+		}
+
+	}
+}

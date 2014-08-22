@@ -1,0 +1,28 @@
+URL: http://lapressclub.org/awards/events/behind-the-grim-sleeper-scoop/
+DATE: September 14, 2010
+TAGS: 
+CATEGORY: Events, Updates
+
+Behind the Grim Sleeper Scoop
+-----------------------------------------------
+
+<div>
+<p><span><a href="http://lapressclub.org/wp-content/uploads/2010/09/grimsleeper-copy3.jpg"><img title="grimsleeper " src="http://lapressclub.org/wp-content/uploads/2010/09/grimsleeper-copy3-300x120.jpg" alt="" width="138" height="56"></a>Award-winning journalists Christine Pelisek and Jill Stewart, discuss How I Got the Story, their fascinating account of the Grim Sleeper serial killer coverage at the <em>Los Angeles Weekly</em>. THIS EVENT IS POSTPONED. Please check back for a new time.  <a href="http://grimsleeper.eventbrite.com" target="_blank">R.S.V.P.</a><!--more-->Pelisek, who recently moved to <em>The Daily Beast</em>, and Stewart, news editor of <em>L.A. Weekly</em>, will talk about the three years they worked together as reporter and editor on a series of stories about the Grim Sleeper, who Pelisek doggedly tracked  sometimes knowing even more clues than the cops. </span></p>
+<p><span>7 pm  networking, drinks and fingerfood</span></p>
+<p><span>7.30pm  program<br>
+</span></p>
+<p><span>Free parking, enter from Berendo.</span></p>
+<p><span>Metro: Red Line Sunset/Vermont</span></p>
+<p><a href="http://grimsleeper.eventbrite.com" target="_blank">R.S.V.P.</a></p>
+<p><script type="text/javascript"></script></p>
+<p>  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26822104-1']);
+  _gaq.push(['_setDomainName', 'lapressclub.org']);
+  _gaq.push(['_trackPageview']);</p>
+<p>  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</p>
+
+</div>

@@ -1,0 +1,106 @@
+
+/* gadget: login box */
+/*****************************************************************************************************/
+.WaGadgetLoginForm {
+
+// Vertical
+	.loginContainerAuthenticated.orientationVertical {
+		.loggedName { margin: 0 0 10px 0; }
+		a {  }
+		.profileBox {  }
+		.viewProfileBox { margin: 0 0 3px 0; font-size: 12px; }
+		.changePasswordBox { margin: 0 0 15px 0; font-size: 12px; }
+		.loggedAction {
+			.loginBoxLogout {  }
+		}
+	}
+
+	.loginContainerForm.orientationVertical {
+		form {
+			.mandatorySymbol { padding: 0 0 0 3px; }
+			.loginUserName { margin: 0 0 10px 0;
+				.loginUserNameLabel { padding: 0 0 4px 0; }
+				.loginUserNameTextBox {
+					input.emailTextBoxControl { width: 200px; border: 1px solid #c5c5c5; margin: 0px 0 0 0; padding: 3px 4px 3px 4px; background: #fff; font-family: Tahoma; font-size: 13px; line-height: 16px; color: #000; }
+				}
+			}
+			.loginPassword { margin: 0 0 10px 0;
+				.loginPasswordLabel { padding: 0 0 4px 0; }
+				.loginPasswordTextBox {
+					input.passwordTextBoxControl { width: 200px; border: 1px solid #c5c5c5; margin: 0px 0 0 0; padding: 3px 4px 3px 4px; background: #fff; font-family: Tahoma; font-size: 13px; line-height: 16px; color: #000;  }
+				}
+			}
+			.loginActionRememberMe { margin: 0 0 10px 0;
+				input.rememberMeCheckboxControl { display: inline-block; width: 13px; height: 13px; margin: 1px 6px 0 0; padding: 0; vertical-align: top; }
+			}
+			.loginAction { float: left; margin-right: 20px;
+				input.loginButton { margin: 0 }
+			}
+			.loginPasswordForgot { float: left; padding: 7px 0 0 0;
+				a {  }
+			}
+		}
+	}
+
+
+// Horizontal
+	.loginContainerAuthenticated.orientationHorizontal { text-align: right;
+		.loggedName { font: 12px Verdana; display: inline-block; margin: 4px 5px 4px 5px; .ie7-inline-block(); }
+		.profileBox { font: 12px Verdana; display: inline-block; margin: 4px 5px 4px 5px; .ie7-inline-block();
+			a {  }
+		}
+		.viewProfileBox {
+			a {  }
+		}
+		.changePasswordBox {
+			a {  }
+		}
+		.loggedAction {
+			a {  }
+		}
+	}
+
+	.loginContainerForm.orientationHorizontal { font: 12px Verdana;
+		form { text-align: right;
+			.loginPasswordForgot { display: inline-block; margin: 3px 3px 3px 0; .ie7-inline-block(); vertical-align: middle;
+				a {  }
+			}
+			.loginUserName { padding: 0 0 0 10px; margin: 3px 3px 3px 0; display: inline-block; .ie7-inline-block(); position: relative; text-align: left; vertical-align: middle;
+				.mandatorySymbol { position: absolute; left: 1px; top: 0; line-height: 20px; font-family: Georgia; font-size: 16px; font-weight: bold; padding: 0; }
+				.loginUserNameLabel { padding: 0 0 0 0; display: block; font-size: 12px;
+					label { cursor: text; }
+				}
+				.loginUserNameTextBox { display: block; background: #fff;
+					input.emailTextBoxControl { width: 130px; height: 20px; border: 1px solid #c5c5c5; margin: 0; padding: 0px 4px 0px 4px; background: none; font-family: Verdana; font-size: 12px; line-height: 20px; color: #000; }
+				}
+			}
+			.loginUserNameJs {
+				.loginUserNameLabel { position: absolute; left: 10px; right: 0; top: 0; height: 100%; z-index: 2; cursor: text; line-height: 22px; text-indent: 5px; display: none; color: #888; }
+				.loginUserNameTextBox {  }
+			}
+			.loginPassword { padding: 0 0 0 10px; margin: 3px 3px 3px 0; display: inline-block; .ie7-inline-block(); position: relative; text-align: left; vertical-align: middle;
+				.mandatorySymbol { position: absolute; left: 1px; top: 0; line-height: 20px; font-family: Georgia; font-size: 16px; font-weight: bold; padding: 0; }
+				.loginPasswordLabel { padding: 0 0 0 0; display: block; font-size: 12px;
+					label { cursor: text; }
+				}
+				.loginPasswordTextBox { display: block; background: #fff;
+					input.passwordTextBoxControl { width: 130px; height: 20px; border: 1px solid #c5c5c5; margin: 0; padding: 0px 4px 0px 4px; background: none; font-family: Verdana; font-size: 12px; line-height: 20px; color: #000; }
+				}
+			}
+			.loginPasswordJs {
+				.loginPasswordLabel { position: absolute; left: 10px; right: 0; top: 0; height: 100%; z-index: 2; cursor: text; line-height: 22px; text-indent: 5px; display: none; color: #888; }
+				.loginPasswordTextBox {  }
+			}
+			.loginActionRememberMe { display: inline-block; margin: 3px 10px 3px 10px; .ie7-inline-block(); vertical-align: middle; white-space: nowrap;
+				input.rememberMeCheckboxControl { display: inline-block; width: 13px; height: 13px; margin: 0px 6px 0 0; padding: 0; vertical-align: middle; }
+				label { display: inline-block; vertical-align: middle; }
+			}
+
+			.loginAction { display: inline-block; margin: 3px 0px 3px 0; .ie7-inline-block(); vertical-align: middle;
+				input.loginButton { display: inline-block; margin: 0; border: 0; padding: 0; width: 80px; height: 24px; background: #303030; line-height: 24px; font: normal 14px Georgia; color: #fff; text-transform: uppercase; }
+			}
+		}
+	}
+
+
+}

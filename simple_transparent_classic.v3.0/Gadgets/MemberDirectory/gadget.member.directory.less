@@ -1,0 +1,160 @@
+
+/****************************************************************************************************/
+/*	WaGadgetMemberDirectory                                                                           */
+/*		WaGadgetMemberDirectoryStateList                                                                   */
+/*		WaGadgetMemberDirectoryStateAdvancedSearch                                                         */
+/****************************************************************************************************/
+
+
+/* mode: WaGadgetMemberDirectoryStateList */
+/*****************************************************************************************************/
+.WaGadgetMemberDirectoryStateList {
+	// Selected search criteria
+	.selectedCriteriaListInnerContainer { background: @InfoContainerBg; padding: 15px 20px 15px 20px;
+		.fieldContainer { margin: 5px 0;
+			.fieldSubContainer { margin: 0;
+				.fieldLabel { font-size: inherit; color: #666;
+					span.criteriaTitle {  }
+				}
+				.criteriaTitleColumn {  }
+				.firstColumn {   }
+				.fieldBody { font-size: inherit;
+					span.conditionTitle {  }
+					span.conditionValue {  }
+				}
+				.criteriaValueColumn {  }
+				.lastColumn {  }
+			}
+		}
+	}
+	.selectedCriteriaListActionsOuterContainer { font-size: inherit; }
+	// Search types selector
+	.browsingColumnsMainContainer {
+		table.browsingColumns {
+			tr.filterHead {
+				th { padding-bottom: 10px; color: #454545;  }
+			}
+			tr.filterRow {
+				td { font-size: inherit;
+					.filterOptions {
+						ul.filterList {
+							li {
+								a {  }
+								a.optionLink {  } // link in filter
+								a.emptyName {  } // option filter with with 0 found
+								a.selectedName {  }
+							}
+						}
+					}
+					.selectedFilter {
+						.selectedName {  }
+						a.changeValue {  } // link "Change"
+					}
+				}
+			}
+		}
+	}
+	// Advanced search link
+	.advSearchContainerLink { margin: 0 0 20px 0; font-size: inherit;
+	}
+	// Search area
+	.memberDirectorySearchAreaOuterContainer { margin: 0 0 20px 0; font-size: inherit;
+		.memberDirectorySearchArea {
+			label {  } // text label "Search:"
+			input[type=text] { border: 1px solid @FormFieldBorder; font-size: 16px; padding: 2px 4px 3px 4px; background: @FormFieldBg; color: @FormFieldColor; } // for search
+			span.searchResult {
+				em#membersFound {  } // count of founded items
+				span#idWaitMessages {  } //
+				a#idReloadData {  // link Refresh cached search
+					img {  }
+				}
+				span#idPagingData {  // text "Show" and container
+					select { font-size: inherit; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+				}
+			}
+		}
+	}
+	// Search results table
+	.memberDirectoryOuterContainer {
+		.memberDirectoryContainer {
+			.memberDirectory { font-size: inherit;
+				table.membersTable {  } // members table ->
+			}
+		}
+	}
+	span#idPagingData2 {
+		select { font-size: inherit; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+	}
+}
+
+
+/* mode: WaGadgetMemberDirectoryStateAdvancedSearch */
+/*****************************************************************************************************/
+.WaGadgetMemberDirectoryStateAdvancedSearch {
+	// Choice of search criteria
+	.searchCriteriaOuterContainer { margin: 0 0 20px 0;
+		.criteriaListItem {
+			.fieldContainer {
+				.fieldSubContainer { margin: 0;
+					table {
+						td.left { font-size: inherit;
+							.fieldLabel {
+								span {  } // sumbol "*"
+								span {  } // name of filed
+							}
+							.labelColumn {  }
+							.firstColumn {  }
+						}
+						td.right {
+							.fieldBody {
+								select { padding: 1px 1px 2px 1px; font-size: 16px; font-family: Tahoma; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+							}
+							.conditionsColumn {  }
+							.lastColumn {  }
+						}
+					}
+					span {
+						input[type=text] { border: 1px solid #cececf; }
+					}
+				}
+			}
+			.valueContainer { padding: 1px 0 0 0; }
+			.valueContainer {
+				.fieldContainer {
+					.fieldSubContainer {
+						span {
+							input[type=text] { border: 1px solid @FormFieldBorder; font-size: 16px; padding: 2px 4px 3px 4px; background: @FormFieldBg; color: @FormFieldColor; }
+							.groupBodyVertical {
+								.fieldItem {
+									span.typeCheckboxContainer,
+									span.typeRadioContainer {
+										input.typeCheckbox,
+										input.typeRadio {  }
+									}
+									span.label { font-size: 14px;
+										label {
+											span.textLine {  }
+										}
+									}
+								}
+							}
+							select { margin: 0; padding: 1px 1px 2px 1px; font-size: 16px; font-family: Tahoma; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+							.DES_CalPopup {
+								span { top: -3px; }
+							}
+						}
+					}
+				}
+			}
+			.DES_CalPopup { margin: 0; }
+		}
+	}
+	.ActionPanelOuterContainer {
+		.searchButtonContainer {
+			input.searchButton { .functionalButton; } // button "Search"
+		}
+	}
+}
+
+
+

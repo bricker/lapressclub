@@ -1,0 +1,21 @@
+
+/* gadget: login box button */
+/*****************************************************************************************************/
+.WaGadgetLoginButton { text-align: right; font-size: 14px;
+
+// Authenticated
+	.loginBoxLapsedMembership { display: inline-block; margin: 4px 5px 4px 5px; }
+	.loginBoxProfileLink { display: inline-block; margin: 4px 5px 4px 5px;
+		a { color: @LoginLinkColor; }
+	}
+	a.loginBoxChangePassword { display: inline-block; margin: 4px 5px 4px 5px; color: @LoginLinkColor; }
+	a.loginBoxLogout { display: inline-block; margin: 4px 5px 4px 5px; color: @LoginLinkColor; }
+
+// Not authenticated
+	.loginBoxLinkContainer {
+		.loginBoxLinkButton { display: inline-block; margin: 0 0 0 0; padding: 8px 20px 7px 20px; font-size: 12px; line-height: 14px; font-family: Arial; color: @LoginButtonColor; text-decoration: none; text-transform: uppercase; background: @LoginButtonBg; .border-radius(4px); opacity: @LoginButtonOpacity / 100; filter: ~"alpha(opacity=@{LoginButtonOpacity})";
+			&:hover { background: @LoginButtonBgHover; opacity: @LoginButtonOpacityHover / 100; filter: ~"alpha(opacity=@{LoginButtonOpacityHover})"; }
+		}
+	}
+
+}

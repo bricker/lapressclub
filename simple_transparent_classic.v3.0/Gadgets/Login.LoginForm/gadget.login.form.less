@@ -1,0 +1,115 @@
+
+/* gadget: login box */
+/*****************************************************************************************************/
+.WaGadgetLoginForm {
+
+	a, a:link, a:visited, a:active { color: @LoginLinkColor; }
+
+// Vertical
+	.loginContainerAuthenticated.orientationVertical {
+		.loggedName {  }
+		a {  }
+		.profileBox {
+			a {  }
+		}
+		.viewProfileBox { font-size: 14px; }
+		.changePasswordBox { font-size: 14px; }
+		.loggedAction {
+			.loginBoxLogout { display: inline-block; margin: 0 0 0 0; border: none; padding: 0px 20px 0px 20px; height: 29px; font-size: 12px; font-family: Arial; color: @LoginButtonColor; text-decoration: none; text-transform: uppercase; background: @LoginButtonBg; .border-radius(4px); opacity: @LoginButtonOpacity / 100; filter: ~"alpha(opacity=@{LoginButtonOpacity})";
+				&:hover { background: @LoginButtonBgHover; opacity: @LoginButtonOpacityHover / 100; filter: ~"alpha(opacity=@{LoginButtonOpacityHover})"; }
+			}
+		}
+	}
+
+	.loginContainerForm.orientationVertical { font-size: 14px;
+		form {
+			.mandatorySymbol {  }
+			.loginUserName {
+				.loginUserNameLabel {  }
+				.loginUserNameTextBox {
+					input.emailTextBoxControl { font-size: 14px; border: 1px solid #cececf; }
+				}
+			}
+			.loginPassword {
+				.loginPasswordLabel {  }
+				.loginPasswordTextBox {
+					input.passwordTextBoxControl { font-size: 14px; border: 1px solid #cececf; }
+				}
+			}
+			.loginActionRememberMe {
+				input.rememberMeCheckboxControl { vertical-align: middle; }
+				label { display: inline-block; vertical-align: middle; }
+			}
+			.loginAction {
+				input.loginButton { display: inline-block; margin: 0 0 0 0; border: none; padding: 0px 20px 0px 20px; height: 29px; font-size: 12px; font-family: Arial; color: @LoginButtonColor; text-decoration: none; text-transform: uppercase; background: @LoginButtonBg; .border-radius(4px); opacity: @LoginButtonOpacity / 100; filter: ~"alpha(opacity=@{LoginButtonOpacity})";
+					&:hover { background: @LoginButtonBgHover; opacity: @LoginButtonOpacityHover / 100; filter: ~"alpha(opacity=@{LoginButtonOpacityHover})"; }
+				}
+			}
+			.loginPasswordForgot {
+				a {  }
+			}
+		}
+	}
+
+
+// Horizontal
+	.loginContainerAuthenticated.orientationHorizontal { font-size: 14px;
+		.loggedName { font-family: inherit; font-size: inherit; }
+		.profileBox { font-family: inherit; font-size: inherit;
+			a {  }
+		}
+		.viewProfileBox {
+			a {  }
+		}
+		.changePasswordBox {
+			a {  }
+		}
+		.loggedAction {
+			a {  }
+		}
+	}
+
+	.loginContainerForm.orientationHorizontal { font-family: inherit; font-size: 14px;
+		form {
+			.loginPasswordForgot {
+				a {  }
+			}
+			.loginUserName {
+				.mandatorySymbol {  }
+				.loginUserNameLabel {
+					label { font-size: 14px; }
+				}
+				.loginUserNameTextBox { background: rgba(255,255,255,0.7);
+					input.emailTextBoxControl { height: 20px; font-family: Tahoma; font-size: 14px; border: 1px solid #666; }
+				}
+			}
+			.loginUserNameJs {
+				.loginUserNameLabel { line-height: 22px; }
+				.loginUserNameTextBox {  }
+			}
+			.loginPassword {
+				.mandatorySymbol {  }
+				.loginPasswordLabel {
+					label { font-size: 14px; }
+				}
+				.loginPasswordTextBox { background: rgba(255,255,255,0.7);
+					input.passwordTextBoxControl { height: 20px; font-family: Tahoma; font-size: 14px; border: 1px solid #666; }
+				}
+			}
+			.loginPasswordJs {
+				.loginPasswordLabel { line-height: 22px; }
+				.loginPasswordTextBox {  }
+			}
+			.loginActionRememberMe { position: relative; top: -1px;
+				input.rememberMeCheckboxControl {  }
+				label {  }
+			}
+
+			.loginAction {
+				input.loginButton { display: inline-block; margin: 0 0 0 0; padding: 0px 20px 0px 20px; height: 29px; font-size: 12px; font-family: Arial; color: @LoginButtonColor; text-decoration: none; text-transform: uppercase; background: @LoginButtonBg; .border-radius(4px); opacity: @LoginButtonOpacity / 100; filter: ~"alpha(opacity=@{LoginButtonOpacity})";
+					&:hover { background: @LoginButtonBgHover; opacity: @LoginButtonOpacityHover / 100; filter: ~"alpha(opacity=@{LoginButtonOpacityHover})"; }
+				}
+			}
+		}
+	}
+}

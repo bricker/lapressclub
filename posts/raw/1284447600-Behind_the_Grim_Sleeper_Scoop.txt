@@ -1,0 +1,38 @@
+URL: http://lapressclub.org/awards/events/behind-the-grim-sleeper-scoop/
+DATE: September 14, 2010
+TAGS: 
+CATEGORY: Events, Updates
+
+Behind the Grim Sleeper Scoop
+-----------------------------------------------
+
+<div class="post-bodycopy clearfix">
+<p><span><a href="http://lapressclub.org/wp-content/uploads/2010/09/grimsleeper-copy3.jpg"><img class="alignleft size-medium wp-image-1002" title="grimsleeper " src="http://lapressclub.org/wp-content/uploads/2010/09/grimsleeper-copy3-300x120.jpg" alt="" width="138" height="56"></a><span id="more-994"></span>Award-winning journalists Christine Pelisek and Jill Stewart, discuss “How I Got the Story,”  their fascinating account of the Grim Sleeper serial killer coverage at the <em>Los Angeles Weekly</em>.  THIS EVENT IS POSTPONED. Please check back for a new time.                 <a href="http://grimsleeper.eventbrite.com" target="_blank">R.S.V.P.</a><!--more-->Pelisek, who recently moved to <em>The Daily Beast</em>, and Stewart, news editor of <em>L.A. Weekly</em>, will talk about the three years they worked together as reporter and editor on a series of stories about the Grim Sleeper, who Pelisek doggedly tracked — sometimes knowing even more clues than the cops. </span></p>
+<p><span>7 pm — networking, drinks and fingerfood</span></p>
+<p><span>7.30pm — program<br>
+</span></p>
+<p><span>Free parking, enter from Berendo.</span></p>
+<p><span>Metro: Red Line Sunset/Vermont</span></p>
+<p><a href="http://grimsleeper.eventbrite.com" target="_blank">R.S.V.P.</a></p>
+<p><script type="text/javascript"></script></p>
+<p>  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26822104-1']);
+  _gaq.push(['_setDomainName', 'lapressclub.org']);
+  _gaq.push(['_trackPageview']);</p>
+<p>  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</p>
+<p></p>
+<div id="simple_socialmedia"><ul class="ssm_row">
+<li class="sharetext">Follow @lapressclub</li>
+<li class="twitter"><a target="_blank" href="http://twitter.com/share?url=http://lapressclub.org/awards/events/behind-the-grim-sleeper-scoop/&amp;text=Behind%20the%20Grim%20Sleeper%20Scoop&amp;via=lapressclub&amp;related=lapressclub">Tweet</a></li>
+<li class="facebook"><a target="_blank" title="Share on Facebook" rel="nofollow" href="http://www.facebook.com/sharer.php?u=http://lapressclub.org/awards/events/behind-the-grim-sleeper-scoop/&amp;t=Behind%20the%20Grim%20Sleeper%20Scoop">Facebook</a></li>
+<li class="linkedin"><a target="_blank" title="Share on LinkedIn" rel="nofollow" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://lapressclub.org/awards/events/behind-the-grim-sleeper-scoop/&amp;title=Behind%20the%20Grim%20Sleeper%20Scoop&amp;source=Los%20Angeles%20Press%20Club">LinkedIn</a></li>
+<li class="tumblr"><a target="_blank" title="Share on Tumblr" rel="nofollow" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Flapressclub.org%2Fawards%2Fevents%2Fbehind-the-grim-sleeper-scoop%2F&amp;name=Los+Angeles+Press+Club&amp;description=Behind+the+Grim+Sleeper+Scoop">Tumblr</a></li>
+<li class="stumble"><a target="_blank" title="Share on StumbleUpon" rel="nofollow" href="http://www.stumbleupon.com/submit?url=http://lapressclub.org/awards/events/behind-the-grim-sleeper-scoop/">Stumble</a></li>
+<li class="digg"><a target="_blank" title="Share on Digg" rel="nofollow" href="http://www.digg.com/submit?phase=2&amp;url=http://lapressclub.org/awards/events/behind-the-grim-sleeper-scoop/">Digg</a></li>
+<li class="delicious"><a target="_blank" title="Share on Delicious" rel="nofollow" href="http://del.icio.us/post?url=http://lapressclub.org/awards/events/behind-the-grim-sleeper-scoop/&amp;title=INSERT_TITLE">Delicious</a></li>
+</ul></div>
+</div>

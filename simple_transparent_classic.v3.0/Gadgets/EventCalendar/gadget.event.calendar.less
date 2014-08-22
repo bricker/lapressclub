@@ -1,0 +1,325 @@
+
+/*****************************************************************************************************/
+/*	WaGadgetEvents                                                                                   */
+/*		WaGadgetEventsStateList                                                                      */
+/*		WaGadgetEventsStateDetails                                                                   */
+/*		WaGadgetEventsStateRegistrationsList                                                         */
+/*		WaGadgetEventsStateSelfRegistrationsList                                                     */
+/*		WaGadgetEventsStateRegistration                                                              */
+/*****************************************************************************************************/
+
+
+/* mode: WaGadgetEventsStateList (Events list) */
+/*****************************************************************************************************/
+.WaGadgetEventsStateList {
+	h3.sectionTitle { margin: 0 20px 0 0; padding: 0; font-size: 50px; font-weight: bold; color: @TypographyHeader1Color; } // "Upcoming events" text
+	h1.pageTitle { margin: 0; font-size: inherit;
+		a.rssFeedLabel { display: inline-block; margin: 18px 0 0px 0; padding: 0; vertical-align: middle; width: 32px; height: 32px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -750px no-repeat;
+			img { display: none; }
+		}
+	}
+	.pageTitleOuterContainer { margin: 18px 0 0 0;
+		.pageViewSwitcherOuterContainer {
+			.pageViewSwitcherContainer {
+				img { display: none; } // Switch to Calendar View
+				a { display: inline-block; margin: 0; padding: 0 0 0 25px; font-size: 20px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -294px no-repeat; }   // Switch to Calendar View
+			}
+		}
+	}
+	ul.boxesList { padding: 21px 0 0 0;
+		li.boxesListItem { margin: 20px 0 20px 0;
+			.boxOuterContainer {  } // block event item ->
+		}
+	}
+	.pastEventsOuterContainer { margin: 40px 0 0 0;
+		h3.sectionTitle { margin: 0 0 20px 0; font-size: 20px; font-weight: normal; } // text "Past events"
+		table.pastEventsList { width: auto; font-size: 14px;
+			td {
+				div.hiddenEventIcon {  }
+				a {  } // name of event
+			}
+			td.left { width: auto; padding-right: 15px; color: #7c7c7c; } // date of past event
+		}
+	}
+
+
+	// -> block event item
+	.boxOuterContainer {
+		.boxHeaderOuterContainer { margin: 0 0 35px 0;
+			.boxHeaderContainer { float: none; padding: 0;
+				h4.boxHeaderTitle { font-size: 36px; font-weight: bold;
+					a {  } // name of event
+					a:hover {  }
+				}
+			}
+		}
+		.boxBodyOuterContainer { border: none; margin: 0 0 20px 0;
+			.boxBodyContainer {
+				.boxBodyInfoOuterContainer { padding: 0;
+					.boxBodyInfoContainer { padding: 0 30px 0 0;
+						.boxInfoContainer { padding: 0; margin: 0 0 20px 0; } // info about event ->
+						.boxActionContainer {
+							input.typeButton { .functionalButton; margin: 0 0 20px 0; } // a register button
+							.infoAlreadyRegistered,
+							.infoRegistrationIsNotAvailable,
+							.infoRegistrationIsClosed { padding: 0;  }
+						}
+					}
+				}
+				.boxBodyContentOuterContainer { padding: 0;
+					.boxBodyContentContainer { padding: 0; }
+					.boxBodyContentContainer.fixedHeight { max-height: 290px; } // content of event
+				}
+			}
+		}
+		.boxFooterOuterContainer { border: none;
+			.boxFooterContainer { padding: 0;
+				a { display: inline-block; padding: 0 0px 0 0; min-height: 19px; line-height: 1.125em; font-size: inherit; // link "Show details"
+					&:after { content: ""; display: inline-block; width: 14px; height: 19px; margin: 0 0 0 8px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -350px no-repeat; vertical-align: top; }
+				}
+			}
+		}
+	}
+
+}
+
+
+
+.WaGadgetEvents {
+
+	// -> info about event
+	.boxInfoContainer {
+		ul.boxInfo {
+			li { padding: 0; margin: 0 0 10px 0; line-height: normal;
+				label { width: 82px; font-size: inherit; color: #7c7c7c; text-align: left; } // header option
+				div { font-weight: normal; // value option
+					strong {  }
+					span {  }
+					a {  }
+				}
+			}
+			li.eventInfoStartDate {
+				label { display: inline-block; padding-bottom: 1px; text-indent: 25px; min-height: 20px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -700px no-repeat; }
+			}
+			li.eventInfoStartTime { margin-top: -9px;
+				label { overflow: hidden; height: 1px; }
+				div {
+					span { color: inherit; }
+				}
+			}
+			li.eventInfoEndDate {
+				label { display: inline-block; padding-bottom: 1px; text-indent: 25px; min-height: 20px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -700px no-repeat; }
+			}
+			li.eventInfoEndTime { margin-top: -9px;
+				label { overflow: hidden; height: 1px; }
+				div {
+					span { color: inherit; }
+				}
+			}
+		}
+	}
+
+}
+
+
+
+/* mode: WaGadgetEventsStateDetails (Events Details) */
+/*****************************************************************************************************/
+.WaGadgetEventsStateDetails {
+	.pageTitleOuterContainer {
+		.pageBackContainer { float: left; width: 50%; padding: 0; margin: 0 0 40px 0;
+			a { display: inline-block; padding: 0 0 0 20px; font-size: 20px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -545px no-repeat; } // link "back"
+		}
+		.pageViewSwitcherOuterContainer { float: right; width: 49%; text-align: right; padding: 0; margin: 0 0 40px 0; font-size: 20px;
+			a { display: inline-block; margin: 0; padding: 0 0 0 25px; font-size: 20px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -294px no-repeat; // link "Add to my calendar"
+				img { display: none; }
+			}
+		}
+		.pageTitleContainer { padding: 0px 0px 0px 0px; margin: 0 0 30px 0; background: none;
+			h1.pageTitle { font-size: 36px; font-weight: normal; font-family: inherit; font-weight: bold; color: @TypographyHeader2Color; } // title - name of event
+		}
+	}
+	.boxOuterContainer { margin: 0px 0 30px 0;
+		.boxBodyContainer { padding: 0;
+			.boxBodyInfoOuterContainer {
+				.boxBodyInfoContainer { padding: 0 30px 0 0;
+					.boxInfoContainer { padding: 0; margin: 0 0 30px 0; } // info about event ->
+					.registrationInfoContainer {  margin: 0 0 0 92px; padding: 0;
+						h4.infoTitle { margin: 0 0 7px 0; font-size: inherit; color: @FormLabelColor; } // text "Registration"
+						.infoText { font-size: 12px; color: #a2a2a2; // description for registration like "(depends on selected options)"
+							strong { display: block; margin: 20px 0 0 0; font-size: 16px; color: @FormLabelColor; }
+						}
+						ul.registrationInfo { padding: 0 0 0 16px;
+							li { padding: 0; margin: 6px 0 6px 0;
+								label { font-size: inherit;
+									strong { font-weight: normal; }
+								}
+								div { color: #666; }
+								img { vertical-align: text-bottom; }
+							}
+						}
+					}
+					.regTypeHr { padding: 0; margin: 1em 0 1em 92px;
+						hr {  }
+					}
+					div {
+						.boxMessageContainer { margin: 1em 0 1em 92px; padding: 0; color: #666;
+							span {  } // Registration message
+						}
+					}
+					.boxActionContainer { margin: 1em 0 1em 92px; padding: 0;
+						input.typeButton { .functionalButton; }
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* mode: WaGadgetEventsStateRegistrationsList | WaGadgetEventsStateSelfRegistrationsList (attendees list and register) */
+/*****************************************************************************************************/
+.WaGadgetEventsStateRegistrationsList,
+.WaGadgetEventsStateSelfRegistrationsList {
+	.pageBackContainer { margin: 0 0 20px 0;
+		a { display: inline-block; padding: 0 0 0 20px; font-size: 20px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -545px no-repeat; } // link "back"
+	}
+	.pageTitleContainer,
+	.titleContainer {  } // title container ->
+	.infoOuterContainer {  }  // event info container ->
+	.generalFormOuterContainer {
+		.titleOuterContainer {
+			.generalFormContainer {
+				.titleLeftContainer { margin: 12px 0 0 0;
+					h2.stepTitle { margin: 0; padding: 0; font-size: 20px; font-weight: normal; } // header "Event registration"
+				}
+				.titleRightContainer {
+					.generalFormOuterContainer {
+						.generalFormContainer {
+							input.typeButton { .functionalButton; } // button "New registration"
+						}
+					}
+				}
+			}
+		}
+		.pagerOuterContainer { .clearAfter; }
+			.eventRegistrationsViewPagerContainer { float: right; }
+		.boxOuterContainer {
+			.pagerOuterContainer {  } // event pager nav ->
+			.boxBodyOuterContainer {
+				.sectionOuterContainer {
+					table.membersTable {  } // common table for event ->
+				}
+				.titleOuterContainer {
+					.titleLeftContainer {  }
+					.titleRightContainer {
+						input.typeButton { .functionalButton; } // button "New registration"
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* mode: WaGadgetEventsStateRegistration (Event registration) */
+/*****************************************************************************************************/
+.WaGadgetEventsStateRegistration {
+	.publicWizardNameContainer {
+		.titleContainer {  } // title container ->
+		.infoOuterContainer {  }  // event info container ->
+	}
+}
+
+
+
+// -> title container
+.WaGadgetEvents {
+    .pageTitleContainer,
+	.titleContainer { padding: 0; margin: 0 0 30px 0;
+		h1.pageTitle { font-size: 36px; color: @TypographyHeader2Color;
+			a {  }
+		}
+		#idTitleRight { margin: 9px 0 0 0;
+			.pageViewSwitcherContainer {
+				a { display: inline-block; margin: 0; padding: 0 0 0 25px; font-size: 20px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -294px no-repeat; //  link "Add to my calendar"
+					img { display: none; } // with icon
+				}
+			}
+		}
+	}
+}
+
+
+// icon for h4 title
+.eventPageContainer {
+	DIV.hiddenEventIcon {  }
+}
+
+
+/* Event - Calendar view
+/****************************************************************************************************/
+.WaGadgetEventsStateCalendar {
+	h3 { margin: 0 20px 20px 0; padding: 0; font-size: 36px; } // date of calendar
+	h1.pageTitle { margin: 0; font-size: inherit; // container for rss icon
+		a.rssFeedLabel { display: inline-block; margin: 6px 0 0px 0; padding: 0; vertical-align: middle; width: 32px; height: 32px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -750px no-repeat;
+			img { display: none; }
+		}
+	}
+	.pageTitleOuterContainer { margin: 9px 0 20px 0;
+		#idEventViewSwitcher {
+			.pageViewSwitcherContainer { font-size: 20px;
+				img { display: none; }
+				a { display: inline-block; padding: 0 0 0 25px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -795px no-repeat; }
+			}
+		}
+	}
+	#idViewSwitchersTable { margin: 20px 0 30px 0; font-size: 20px;
+		#group1 { width: auto; float: left;
+			div {  }
+		}
+		#group2 { width: auto; float: right;
+			div {  }
+		}
+	}
+	// top links week/month/year etc
+	.EventListCalendar { border: none; border-bottom: 1px solid #b2b2b2;
+		td { padding: 10px; border-color: #b2b2b2; }
+		td.EventListCalendarHeader { padding: 26px 10px 26px 10px; border: none !important; color: @CalendarTableHeadingColor; background-color: @CalendarTableHeadingBg; font-size: inherit; }
+		td > div { margin: -8px -10px -8px -10px; padding: 6px 11px 8px 11px; background: @CalendarTableEventBg; color: @CalendarTableEventColor; .border-radius(8px);
+			a { color: #fff; }
+		}
+		.calendarDate { cursor: default; text-decoration: none; color: #888; }
+		.EventListCalendarHeader .calendarDate { color: #fff; }
+		.EventListCalendarItemSelected .calendarDate { font-weight: bold; color: @CalendarTableCurrentDateColor; }
+		
+		.EventListCalendarItemDefault[height="30"],
+		.EventListCalendarItemSelected[height="30"],
+		.EventListCalendarItemInactive[height="30"] { height: 10px; padding-top: 5px; padding-bottom: 5px; }
+
+		.EventListCalendarItemDefault[height="50"],
+		.EventListCalendarItemSelected[height="50"],
+		.EventListCalendarItemInactive[height="50"] { height: 10px; padding-top: 5px; padding-bottom: 5px; }
+
+		.EventListCalendarItemDefault[height="70"],
+		.EventListCalendarItemSelected[height="70"],
+		.EventListCalendarItemInactive[height="70"] { height: 40px; }
+
+		// week
+		.EventListCalendarItemDefault[height="90"],
+		.EventListCalendarItemSelected[height="90"],
+		.EventListCalendarItemInactive[height="90"] { height: auto; padding-top: 20px; padding-bottom: 20px; }
+
+		.EventListCalendarItemDefault[height^="180"],
+		.EventListCalendarItemSelected[height^="180"],
+		.EventListCalendarItemInactive[height^="180"] { height: auto; padding-top: 20px; padding-bottom: 20px; }
+
+		// year
+		.yearViewHeader { display: block; margin: -10px -9px -10px -10px; padding: 10px; background-color: @CalendarTableHeadingBg; color: @CalendarTableHeadingColor; }
+		
+		td > table { margin: -10px; }
+		td > table td { border: none !important; background: none !important; }
+		tr:nth-child(2) > td { border-top: none !important; }
+	}
+}

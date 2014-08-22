@@ -1,0 +1,134 @@
+/*
+#################
+Global
+#################
+*/
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/*
+#################
+Header
+#################
+*/
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+  .header h3 {
+    padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+    .header h3 a {
+      display: block;
+      background: url('../images/logo.png') no-repeat;
+      padding-left: 90px;
+      color: #999;
+      text-decoration: none;
+      line-height: 80px;
+    }
+
+ul.second-tier li {
+  display: inline-block;
+}
+
+li.social {
+  line-height: 36px;
+  width: 36px;
+  margin: 5px;
+}
+
+  li.social a {
+    text-decoration: none;
+    text-indent: 100%;
+    display: block;
+  }
+
+li.facebook a {
+  background: url('../images/facebook.png') no-repeat;
+}
+
+li.twitter a {
+  background: url('../images/twitter.png') no-repeat;
+}
+
+/*
+#################
+Jumbotron
+#################
+*/
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+  .jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+  }
+
+  .jumbotron form {
+    display: inline-block;
+  }
+
+
+/*
+#################
+Article
+#################
+*/
+
+article {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+
+  article header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+
+/*
+#################
+Footer
+#################
+*/
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+
+@media (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

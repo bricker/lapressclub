@@ -1,0 +1,21 @@
+URL: http://lapressclub.org/updates/new-website/
+DATE: December 15, 2009
+TAGS: 
+CATEGORY: Updates
+
+New Website
+-----------------------------------------------
+
+<div class="post-bodycopy clearfix">
+<p><img style="float: left; border: 0px initial initial;" src="http://lapressclub.org/wp-content/uploads/2009/12/PressClubSlant.jpg" alt="" width="225" height="125"> The Los Angeles Press Club is excited to unveil its brand new website!  Take some time to  learn about the <a href="http://lapressclub.info/wordpress/about/history/">Press Club’s history</a> or take a look at some of the Press Club’s  annual <a href="http://lapressclub.info/wordpress/awards/">awards</a>.  You can also join the press club or<a href="http://lapressclub.info/wordpress/help-out"> help out</a>.  Welcome!</p>
+<div id="simple_socialmedia"><ul class="ssm_row">
+<li class="sharetext">Follow @lapressclub</li>
+<li class="twitter"><a target="_blank" href="http://twitter.com/share?url=http://lapressclub.org/updates/new-website/&amp;text=New%20Website&amp;via=lapressclub&amp;related=lapressclub">Tweet</a></li>
+<li class="facebook"><a target="_blank" title="Share on Facebook" rel="nofollow" href="http://www.facebook.com/sharer.php?u=http://lapressclub.org/updates/new-website/&amp;t=New%20Website">Facebook</a></li>
+<li class="linkedin"><a target="_blank" title="Share on LinkedIn" rel="nofollow" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://lapressclub.org/updates/new-website/&amp;title=New%20Website&amp;source=Los%20Angeles%20Press%20Club">LinkedIn</a></li>
+<li class="tumblr"><a target="_blank" title="Share on Tumblr" rel="nofollow" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Flapressclub.org%2Fupdates%2Fnew-website%2F&amp;name=Los+Angeles+Press+Club&amp;description=New+Website">Tumblr</a></li>
+<li class="stumble"><a target="_blank" title="Share on StumbleUpon" rel="nofollow" href="http://www.stumbleupon.com/submit?url=http://lapressclub.org/updates/new-website/">Stumble</a></li>
+<li class="digg"><a target="_blank" title="Share on Digg" rel="nofollow" href="http://www.digg.com/submit?phase=2&amp;url=http://lapressclub.org/updates/new-website/">Digg</a></li>
+<li class="delicious"><a target="_blank" title="Share on Delicious" rel="nofollow" href="http://del.icio.us/post?url=http://lapressclub.org/updates/new-website/&amp;title=INSERT_TITLE">Delicious</a></li>
+</ul></div>
+</div>

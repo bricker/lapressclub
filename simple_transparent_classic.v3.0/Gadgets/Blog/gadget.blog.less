@@ -1,0 +1,239 @@
+/*****************************************************************************************************/
+/*	WaGadgetBlog                                                                                       */
+/*		WaGadgetBlogStateList                                                                               */
+/*		WaGadgetBlogStateDetails                                                                            */
+/*		WaGadgetBlogStateEditPost                                                                           */
+/*		WaGadgetBlogStateAddPost                                                                            */
+/*****************************************************************************************************/
+
+
+/* mode: WaGadgetBlogStateList (list of post) */
+/*****************************************************************************************************/
+.WaGadgetBlogStateList {
+
+	.pageTitleOuterContainer {  } // title of gadget blog ->
+	.introOuterContainer {  } // description of blog ->
+
+	#idAddNewPostButtonContainer { float: left; // button add post
+		input[type=submit] { .functionalButton; }
+	}
+	a.rssFeedLabel { float: left; display: inline-block; margin: 8px 0 20px 0; padding: 0px 0 0 0; vertical-align: middle; width: 32px; height: 32px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -750px no-repeat;
+		img { vertical-align: top; display: none; }
+	}
+	.pagerOuterContainer { float: right; clear: none; margin: 7px 0 20px 0; } // page navigation top ->
+	.blogPostListOuterContainer { padding-top: 30px; } // inner container lists of posts ->
+	.pagerOuterContainer {  } // page navigation bottom ->
+}
+
+
+.WaGadgetBlog {
+
+	// -> inner container lists of posts
+	ul.boxesList {
+		li.boxesListItem { margin: 0 0 48px 0;
+			.boxHeaderOuterContainer { padding: 0px 0px 20px 0px; background: none;
+				h4.boxHeaderTitle { font-size: 24px; font-weight: bold; font-family: Tahoma;
+					a {  }
+				}
+			}
+			.boxBodyOuterContainer {
+				.boxBodyInfoOuterContainer {  }
+				.boxBodyContentOuterContainer { padding: 0px 0px 0px 0px; margin: 0 0 30px 0; }
+			}
+		}
+	}
+
+
+	// -> info data, author
+	.boxBodyInfoOuterContainer { padding: 0 0px 8px 0px; margin: 0 0 30px 0; background: none; border-bottom: 1px solid @SingularLineColor;
+		h5 { .clearfix; visibility: hidden;
+			.postedOn { visibility: visible; padding: 1px 0 1px 26px; min-height: 18px; font-family: Tahoma; font-size: 16px; line-height: 1.125em; color: #959494; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -700px no-repeat; } // date of post
+			.postedByLabel,
+			.postedByLink { float: left; visibility: visible; font-family: tahoma; font-size: 20px; color: #626262;
+				&:before { content: "Posted by: "; }
+			}
+		}
+	}
+
+
+	// -> post bottom - links for control
+	.boxFooterOuterContainer { padding: 0 0px 0px 0px;
+		.postBottom { overflow: hidden; color: #999;
+			.boxFooterPrimaryOuterContainer { float: left;
+				.boxFooterPrimaryContainer { visibility: hidden;
+					a { display: inline-block; padding: 0 0 0 20px; visibility: visible; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -349px no-repeat; }   // link "read more" &
+					a + a { display: inline-block; padding: 0 0 0 35px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -399px no-repeat; } // "comment (21)" & "Add comment"
+					input.submit {  } // button "post"
+				}
+			}
+			.boxFooterSecondaryOuterContainer { float: right;
+				.boxFooterSecondaryContainer { visibility: hidden;
+					a.editPost { display: inline-block; padding: 0 0 0 25px; visibility: visible; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -449px no-repeat; } // link "edit"
+					a.deletePost { display: inline-block; padding: 0 0 0 25px; visibility: visible; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -499px no-repeat; } // link "delete"
+					input.submit {  } // button "cancel"
+				}
+			}
+		}
+	}
+}
+
+
+/* mode: WaGadgetBlogStateDetails (details of post, add comment) */
+/*****************************************************************************************************/
+.WaGadgetBlogStateDetails {
+	.pageTitleOuterContainer {  } // title of gadget blog ->
+	.blogEntryOuterContainer {  } // text of post ->
+	.blogCommentsOuterContainer {  } // comments ->
+}
+
+
+.WaGadgetBlog {
+
+	// -> title of gadget blog
+	.pageTitleOuterContainer { margin: 0 0 30px 0;
+		.pageBackContainer {
+			a { display: inline-block; padding: 0 0 0 20px; font-size: 20px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -545px no-repeat; }
+		}
+	}
+
+	// -> text of post
+	.blogEntryOuterContainer { margin-bottom: 25px;
+		// title
+		.boxHeaderOuterContainer { padding: 0px 0px 0px 0px; margin: 0 0 20px 0; background: none;
+			.boxHeaderContainer {
+				h4.boxHeaderTitle { font-size: 36px; font-weight: bold; }
+			}
+		}
+		.boxBodyOuterContainer { margin: 0 0 20px 0;
+			.boxBodyContentOuterContainer { padding: 0px 0px 0px 0px; }
+		}
+	}
+							
+				
+	// -> comments
+	.blogCommentsOuterContainer { margin: 0; padding: 25px 0 0 0; position: relative;
+		h3.sectionTitle { padding: 0 0 3px 0; font-size: 20px; font-weight: normal; } // just text "Comments"
+		.blogCommentsListOuterContainer {
+			// ul list of comments ->
+			ul.blogCommentsList {  }
+		}
+		&:before { content: ""; position: absolute; left: 0px; top: 0; width: 100%; height: 1px; overflow: hidden; border-top: 3px double @SingularLineColor; border-bottom: 1px solid @SingularLineColor; }
+	}
+						
+	// -> ul list of comments
+	ul.blogCommentsList {
+		li.blogCommentItem {
+			.blogComment {
+				.commentViewContainer { margin: 0 0 45px 0;
+					.boxHeaderOuterContainer { padding: 0 0 9px 0; margin: 0 0 20px 0; border-bottom: 1px solid @SingularLineColor;
+						h5 { font-size: 16px; color: #959494;
+							span:first-child { visibility: visible; padding: 1px 0 1px 26px; min-height: 18px; font-family: Tahoma; font-size: 16px; line-height: 1.125em; color: #959494; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -698px no-repeat; } // date
+							a.blogEntryPostedBy {  } // user
+						}
+					}
+					.boxBodyOuterContainer { margin: 0 0 20px 0;
+						.commentBodyContainer { line-height: 1.375;
+							span.postBody {  } // message of user - cooment
+						}
+					}
+					.boxFooterOuterContainer {
+						.boxFooterContainer {
+							.boxFooterPrimaryOuterContainer {
+								.commentBottomLeft { visibility: hidden;
+									a.blogCommentAnchor { display: inline-block; padding: 0 0 0 23px; visibility: visible; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -599px no-repeat; }
+									a.reply { display: inline-block; padding: 0 0 0 28px; visibility: visible; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -649px no-repeat; }
+								}
+							}
+							.boxFooterSecondaryOuterContainer {
+								.commentBottomRight {
+									a.delete { display: inline-block; padding: 0 0 0 25px; visibility: visible; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 0 -499px no-repeat; }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.WaGadgetBlogStateDetails {
+	// -> post bottom - links for control
+	.boxFooterOuterContainer {
+		.postBottom {
+			.boxFooterPrimaryOuterContainer {
+				.boxFooterPrimaryContainer {
+					a { .functionalButton; } // link "add coment"
+				}
+			}
+			.boxFooterSecondaryOuterContainer { padding-top: 14px;
+				.boxFooterSecondaryContainer {
+				}
+			}
+		}
+	}
+}
+
+
+
+/* edit or add post */
+/*****************************************************************************************************/
+.WaGadgetBlogStateEditPost,
+.WaGadgetBlogStateAddPost {
+	.pageTitleOuterContainer { }
+	.boxHeaderOuterContainer { padding: 0 0 5px 0; border-bottom: 1px solid #cececf;
+		.boxHeaderContainer {
+			h4.boxHeaderTitle { font-size: 16px; color: #9b9b9b; font-weight: normal; } // text "Creating new entry"
+		}
+	}
+	.boxBodyOuterContainer {
+		.generalFieldsContainer {
+			.mandatoryFieldsTitle {  margin: -25px 0 30px 0; padding: 0 0 6px 0; text-align: right; color: #9b9b9b; font-size: 16px; font-weight: normal;
+				em { color: #ff0000; font-style: normal; font-weight: bold; } // "*"
+				strong { font-weight: normal; } // text "Mandatory"
+			}
+			.fieldContainer {
+				.fieldSubContainer {
+					.fieldLabel {  }
+				}
+			}
+			#idBlogPostEditorFieldContainer td.right .fieldBody span:first-child {  }
+		}
+	}
+	.boxFooterOuterContainer { padding: 0 0 0 25%; margin: 20px 0;
+		.boxFooterPrimaryOuterContainer {
+			input { .functionalButton; }
+		}
+		.boxFooterSecondaryOuterContainer {
+			input { .functionalButton; }
+		}
+	}
+}
+
+
+
+// Add new comment
+.addNewCommentOuterContainer { margin: 40px 0 40px 0;
+	.boxActionContainer { margin: 20px 0 0 0; padding: 0 0 0 25%;
+		input[type=submit] { .functionalButton; margin-right: 10px; }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+
+/****************************************************************************************************/
+/*	WaGadgetForum                                                                                     */
+/*		WaGadgetForumStateList                                                                             */
+/****************************************************************************************************/
+
+
+/* mode: WaGadgetForumStateList (forum summary) */
+/*****************************************************************************************************/
+.WaGadgetForumStateList {
+	.forumCategoryListOuterContainer { padding: 0;
+		.forumCategoryOuterContainer { margin: 0 0 30px 0; }
+	}
+	h5 { font-family: inherit; font-size: 20px; color: #454545; }  // text "Uncategorized"
+	.forumListContainer {
+		table {
+			td { padding: 10px 20px 10px 0px; height: auto;
+				&:first-child { padding-left: 10px; }
+			}
+			td.pageStateIconTD {
+				.pageStateIcon {
+					div {  }
+				}
+			}
+			td.threadTD { width: 55%;
+				.thread {
+					h4.boxHeaderTitle {  }
+				}
+			}
+			td.lastReplyTD { width: 25%;
+				.lastReply {
+					h4.boxHeaderTitle {  }
+				}
+			}
+			td.topicsCountTD {
+				.topicsCount { min-width: 68px;
+					h4.boxHeaderTitle {  }
+				}
+			}
+			td.repliesCountTD {
+				.repliesCount {  min-width: 77px;
+					h4.boxHeaderTitle {  }
+				}
+			}
+		}
+		.boxHeaderOuterContainer {
+			table {
+				td { padding: 19px 20px 21px 0px; background: @ForumTableHeadingBg;
+					&:first-child { padding-left: 10px; }
+					h4 { font-size: 24px; font-weight: normal; color: @ForumTableHeadingColor; line-height: normal; }
+				}
+			}
+		}
+		.boxBodyOuterContainer {
+			table.forumListTable { border: none;
+				tr.forumListRow {
+					td { border-top: none; border-bottom: 1px solid #cececf; }
+					td.pageStateIconTD { vertical-align: top;
+						.pageStateIcon { margin-top: 3px; }
+					}
+					td.threadTD { vertical-align: top;
+						.thread {
+							a.forumTitle { font-size: 18px; }
+							span.forumDescription { font-size: 14px; }
+						}
+					}
+					td.lastReplyTD { font-size: 14px;
+						.lastReply {
+							a { }
+							span {  }
+						}
+					}
+					td.topicsCountTD { color: #454545; font-weight: bold;
+						.topicsCount {  }
+					}
+					td.repliesCountTD { color: #454545; font-weight: bold;
+						.repliesCount {  }
+					}
+				}
+				tr.highlight td { background: @ForumTableHighlightBg; }
+			}
+		}
+	}
+}

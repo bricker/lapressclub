@@ -1,0 +1,8 @@
+// Common wizard button
+.functionalButton { width: auto; height: auto; margin: 0; padding: 14px 20px 14px 20px; border: none; background: @FunctionButtonBg; .border-radius(4px); -webkit-appearance: none;
+	font: normal 16px/1.25em Arial; color: @FunctionButtonColor; text-decoration: none; text-transform: uppercase; white-space: nowrap; text-align: center; vertical-align: middle;
+	&:hover { background: @FunctionButtonBgHover; }
+	.disabled { .opacity(50); cursor: default;
+		&:hover {  }
+	}
+}

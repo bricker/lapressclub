@@ -1,0 +1,22 @@
+// -> members table
+.genericListTable,
+.membersTable { border: none; border-bottom: 1px solid #cececf;
+	thead {
+		th { padding: 19px 20px 21px 0px; font-family: inherit; height: auto; font-weight: normal; font-size: 24px; line-height: 1em; background-color: @TableHeadingBg; color: @TableHeadingColor; }
+		th:first-child { padding-left: 20px; }
+	}
+	tbody {
+		td { padding: 16px 20px 16px 0px; border-top: 1px solid #cececf; height: auto;
+			&:first-child { padding-left: 20px; }
+			.memberValue { padding: 0;
+				h5 { font-family: Tahoma; font-size: inherit;
+					a {  } // link to View details
+				}
+			}
+		}
+		tr:first-child td { border-top: none; }
+	}
+	tr:hover {
+		td { background-color: @TableRowHighlightBg; }
+	}
+}

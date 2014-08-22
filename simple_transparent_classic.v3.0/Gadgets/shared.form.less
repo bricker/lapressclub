@@ -1,0 +1,223 @@
+
+// Basic structure of form
+.generalFormOuterContainer {
+	.formTitleOuterContainer {  } // title block ->
+	.captionoutercontainer {  } // section divider and name ->
+	.sectionOuterContainer { margin: 20px 0;
+		.sectionContainer {
+			.fieldContainer {  } // different fields ->
+		}
+	}
+	.navigationOuterContainer {  } // control link and bottoms under form ->
+}
+
+// Clear selection
+.clearSelectionLabel { cursor: pointer; display: inline-block; margin: 0 0 8px 0; text-decoration: none; }
+.clearSelectionLabel:hover { text-decoration: underline; }
+
+// Title block
+.formTitleOuterContainer { margin: 0 0 30px 0;
+	.formTitleContainer { padding-bottom: 5px; border-bottom: 1px solid @FormFieldBorder;
+		.inner {
+			h3.formTitle { color: #9b9b9b; } // title form
+			.mandatoryFieldsTitle { padding: 0; font-size: inherit;
+				span.mandatorySymbol {  } // symbol "*"
+				strong { color: #9b9b9b; font-weight: normal; } // text "Mandatory fields"
+			}
+		}
+	}
+}
+
+
+// Section divider and name
+.captionOuterContainer { background: @FormSectionBg; padding: 10px 0 10px 0; margin: 30px 0 30px 0;
+	.captionContainer {
+		.fieldBody {
+			h4 { font-size: 36px; font-family: Tahoma; font-weight: bold; color: @FormSectionColor; }
+		}
+	}
+}
+
+
+// Common field
+.fieldSubContainer { margin: 20px 0 20px 0; .clearfix();
+	// label
+	.fieldLabel { font-size: inherit; line-height: normal; color: @FormLabelColor;
+		span.mandatorySymbol {  }
+		span {  } // text of field label
+		strong.mandatoryLabel { font-weight: normal; }
+		.labeledImage {
+			img {  }
+		}
+		.memberFormCheckBox {
+			input[type=checkbox] {  }
+			label {  }
+		}
+	}
+	// input
+	.fieldBody { font-size: 16px;
+		& > .typeInstruction { padding: 6px 0 0 0; font-style: normal; color: #9b9b9b; }
+		.fieldItem { margin: 0 0 10px 0;
+			span.typeCheckboxContainer,
+			span.typeRadioContainer { margin: 2px 9px 0 0;
+				input.typeCheckbox,
+				input.typeRadio {  }
+			}
+			span.label { font-size: 14px;
+				.textLine { }
+				img {  }
+				label {
+					span.textLine {  } // text for radiobutton
+				}
+				.typeInstruction {
+					.levelDescription {  }
+				}
+				label.levelProperties {  }
+				.labelSubTitle {  }
+			}
+			&.disabled .label span:first-child label {  }
+		}
+		.groupBodyVertical { padding-top: 3px; margin-bottom: -10px; font-size: 14px;
+			.clearSelectionLabel { position: relative; top: -1px; }
+		}
+		& > .fieldItem {  }
+
+		a.inactiveLink {  }
+
+	// just value
+		& > span,
+		& > strong { vertical-align: top; }
+		& > a { }
+		ul.list {
+			li {
+				&.checked {  }
+				&.unchecked {  }
+				ul.list {  }
+			}
+		}
+	}
+	table {
+		td.left {
+			.fieldLabel {  }
+		}
+		td.right {
+			.fieldBody {  }
+		}
+	}
+}
+
+
+
+
+// Field - text
+.fieldContainer.textFieldContainer {
+	.fieldSubContainer.singleStringContainer {
+		table {
+			td.right {
+				.fieldBody {
+					input.subjectTextBox,
+					input.typeText,
+					input[type=text] { border: 1px solid @FormFieldBorder; font-size: 16px; padding: 2px 4px 3px 4px; background: @FormFieldBg; color: @FormFieldColor; }
+					input[disabled=disabled] { background: @FormFieldBgDisabled; }
+				}
+			}
+		}
+	}
+}
+
+
+// Field - select
+.fieldContainer.dropdownFieldContainer {
+	.fieldSubContainer.singleStringContainer {
+		table {
+			td.right {
+				.fieldBody {
+					select { padding: 1px 1px 2px 1px; font-size: 16px; font-family: Tahoma; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+					select[disabled=disabled] { background: @FormFieldBgDisabled; }
+				}
+			}
+		}
+	}
+}
+
+
+// Field - donation
+.fieldContainer.donationAmountContainer {
+	.fieldSubContainer {
+		.fieldBody {
+			input.typeText { border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; }
+			input.typeText[disabled=disabled] { background: @FormFieldBgDisabled; }
+		}
+	}
+}
+
+
+// Field - date picker
+.fieldContainer.textFieldContainer {
+	.fieldSubContainer.singleStringContainer {
+		table {
+			td.right {
+				.fieldBody {
+					span {
+						input { width: 140px; border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor; } // for input date
+						input[disabled=disabled] { background: @FormFieldBgDisabled; }
+						.DES_CalPopup { position: relative; top: -2px; background: url(<$StaticModel.ThemeUrl$>/images/simple_colored_icon_set.png) 2px -998px no-repeat;
+							img { .opacity(0); cursor: pointer; } // click image - popup calendar
+						}
+						.DES_TPPopup { position: relative; top: -4px; }
+						div[id$="Time_PU"] { background: none;
+							img { cursor: pointer; }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Field - textarea
+.fieldContainer.textFieldContainer {
+	.fieldSubContainer {
+		.fieldBody {
+			textarea { margin: -1px 0 0 0; border: 1px solid @FormFieldBorder; font-size: 16px; padding: 2px 4px 3px 4px; background: @FormFieldBg; color: @FormFieldColor; } // for input text
+			textarea[disabled=disabled] { background: @FormFieldBgDisabled; }
+		}
+	}
+}
+
+
+// Field - WYSIWYG
+.fieldContainer.textFieldContainer {
+	.fieldSubContainer.singleStringContainer {
+		.fieldBody {
+			#idEditorContainer { border: 1px solid @FormFieldBorder; background: @FormFieldBg; color: @FormFieldColor;
+				#idEditorToolbarContainer { border-bottom: 1px solid #8cc63f; }
+			}
+		}
+	}
+}
+
+
+// Control links and bottoms under form
+.navigationOuterContainer { margin: 30px 0 20px 0;
+	.navigationContainer {
+		.left {
+			input.nextButton,
+			input.typeButton,
+			input[type=submit] { .functionalButton; margin-right: 10px; } // wizard button
+		}
+		.right {
+			input.nextButton,
+			input.typeButton,
+			input[type=submit] { .functionalButton; margin-left: 10px; } // wizard button
+		}
+	}
+}
+.generalFieldsContainer {
+	.fieldSubContainer {
+		input[type=submit],
+		input.typeButton { .functionalButton; margin-right: 10px; } // wizard button
+	}
+}
+
